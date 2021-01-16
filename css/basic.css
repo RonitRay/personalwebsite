@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     /*background-color: #2e3440;
     color: #d8dee9;*/
     padding-left: 10%;
@@ -16,9 +16,10 @@ body {
     text-align: center;
 }
 
-a {
+a {www
     /*color: #d8dee9;*/
-    color: #00ccff;
+    /*color: #00ccff;*/
+    color: blue;
 }
 
 a:hover{
