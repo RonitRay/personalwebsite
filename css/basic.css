@@ -20,6 +20,10 @@ body {
     color: #d8dee9;*/
 }
 
+.codeblock{
+        overflow-x:auto;
+}
+
 #home-header{
     text-align: center;
 }

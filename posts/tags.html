@@ -38,6 +38,7 @@ Tags are a thing now, I guess
 <ol>
 <li><p>A set of unique tags is built after scanning each post.</p>
 
+<div class="codeblock">
 <pre><code class='language-python'>
 python tags = []; 
 for post in posts_metadata: 
@@ -45,18 +46,22 @@ for post in posts_metadata:
         tags.extend(post['tags'].split(', ')); 
 tags=list(set(tags)); 
 tags.sort();
-</code></pre></li>
+</code></pre>
+</div></li>
 <li><p>There is a 'tag' template that is meant to display all posts for a particular tag, which are passed to it by the generator.</p>
 
+<div class="codeblock">
 <pre><code class='language-html'>   
 {% for post in tagposts %}
 {% if post.blog == 'yes' %}
     &lt;p&gt; {{post.date}} | &lt;a href="posts/{{ post.slug }}.html"&gt;{{post.title}}&lt;/a&gt;&lt;/p&gt;
 {% endif %}
 {% endfor %}
-</code></pre></li>
+</code></pre>
+</div></li>
 <li><p>This tag page is generated in my main generator program for every unique tag. We loop through the posts, find whether their tag list contains a particular tag, and then pass it in the list of posts to the template if it does.</p>
 
+<div class="codeblock">
 <pre><code class='language-python'>
 tag_template = env.get_template('tag.html')
 for tag in tags:
@@ -64,7 +69,8 @@ for tag in tags:
     tag_html = tag_template.render(tagposts=tagposts_metadata, tag=tag)
     with open('output/posts/tag-'+tag+'.html', 'w') as file:
         file.write(tag_html)
-</code></pre></li>
+</code></pre>
+</div></li>
 </ol></li>
 </ol>
 
