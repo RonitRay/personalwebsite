@@ -1,11 +1,23 @@
+@media only screen and (orientation: portrait) {
+  body {
+          padding-left: 2%;
+          padding-right: 2%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+          padding-left: 10%;
+          padding-right: 10%;
+  }
+}
+
 body {
     font-family: sans-serif;
     background-color: white;
     color: black;
     /*background-color: #2e3440;
     color: #d8dee9;*/
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 #home-header{
