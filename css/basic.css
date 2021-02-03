@@ -43,4 +43,5 @@ a {
 a:hover{
     color: white;
     background-color: #161 /*#00ccff*/;
+    text-decoration: none;
 }
