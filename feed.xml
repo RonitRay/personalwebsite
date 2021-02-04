@@ -5,9 +5,9 @@
 <description>Feed for Ronit Ray's personal blog</description>
 <lastBuildDate>Thu, 04 Feb 2021</lastBuildDate>
 <item>
-<title>Crypto- A Regret and A Request</title>
-<link>https://ronitray.neocities.org/posts/crypto-regret-request.html</link>
-<pubdate>Fri, 22 Jan 2021</pubdate>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
 
 <content:encoded><![CDATA[<p>In my second year in university as a CS major, I pitched an academic paper to an IEEE conference along with three colleagues. The paper highlighted a "novel" symmetric encryption scheme that we'd spent the better part of the summer brainstorming. It wasn't without its merits, and seemed to fulfill <a href="https://sites.google.com/site/kryptosgrapheinen/overview/objectives">the absolute basics of cryptography</a> well enough. We mostly thought of it as a toy project, and went ahead to make an encrypted chat application, where keys were generated on the initiating device and shared to the recipient via an implementation of the <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Diffie-Hellman Key Exchange</a>. At the time, everyone involved was rather excited about it, and while we didn't think of ourselves as cryptographic pioneers, having the paper accepted certainly was a matter of pride and added what we felt was some legitimacy to our efforts.</p>
 
@@ -43,9 +43,9 @@
 ]]></content:encoded>
 </item>
 <item>
-<title>Signal: Down, but Not Out</title>
-<link>https://ronitray.neocities.org/posts/signal-down.html</link>
-<pubdate>Sat, 16 Jan 2021</pubdate>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
 
 <content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=25793483">Signal services were down</a> at night (IST) on Friday, 15th January, 2021.</p>
 
@@ -65,9 +65,9 @@
 ]]></content:encoded>
 </item>
 <item>
-<title>GitHub Pages to Neocities, a New Home</title>
-<link>https://ronitray.neocities.org/posts/gh-to-neocities.html</link>
-<pubdate>Thu, 14 Jan 2021</pubdate>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
 
 <content:encoded><![CDATA[<p>Today, I moved this website over from GitHub Pages to Neocities. </p>
 
@@ -83,9 +83,9 @@
 ]]></content:encoded>
 </item>
 <item>
-<title>Why I Don't Use Telegram</title>
-<link>https://ronitray.neocities.org/posts/why-i-dont-use-telegram.html</link>
-<pubdate>Sun, 10 Jan 2021</pubdate>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
 
 <content:encoded><![CDATA[<p>WhatsApp recently rolled out <a href="https://arstechnica.com/tech-policy/2021/01/whatsapp-users-must-share-their-data-with-facebook-or-stop-using-the-app/">changes to its privacy policy</a> that highlight how user data is shared with Facebook in a common pool of data from all Facebook-owned services. While this just sheds light on practices that one must assume have been in play since WhatsApp was acquired by Facebook 6 years ago, putting it front and center seems to have been enough to give a not-insignificant portion of its user base a sense of unease. A number of people have chosen to move to other messaging applications, either dropping WhatsApp entirely or at least shifting as much of their network over to other platforms as possible. While this is an admirable pursuit, one that I have been vocally in favour of for the last few years, there are still good and bad options among the available alternatives.</p>
 
@@ -114,6 +114,266 @@
 <p>All this said, it would be unfair to say Telegram is entirely insecure or that its developers have made a bad application with no thought put into its security. As is the case with everything in life, there is nuance to it, and they have chosen to trade convenience for security/privacy in several instances. If your threat model is okay with these compromises, Telegram may well be the most engaging, fluid, and featureful instant messaging platform you can find. Personally, it is not for me, and I choose to keep my messages on <a href="https://signal.org/">Signal</a>, and have tried <a href="https://briarproject.org/">Briar</a> (peer-to-peer, decentralized, e2ee) and <a href="https://matrix.org/">Matrix</a> (decentralized, p2p available, e2ee available) recently. No messaging app is perfect, and trade-offs like the ones Telegram made exist on each of these, although the options I prefer do tend to value security and privacy over convenience in most aspects. I do continue to use WhatsApp simply because network effects (<a href="https://techcrunch.com/2019/07/26/whatsapp-india-users-400-million/">India is WhatsApp's largest market in the world</a>) have made it so that most of my contacts as well as professional groups use WhatsApp as their platform.</p>
 
 <p>I've tried to do my due diligence while writing this article but would absolutely appreciate being proven wrong in any of my claims or being provided any information that proves useful in evaluating the viability of Telegram or any oftheir competing platforms. Please free to contact me with the information on this site, and I will put up corrections to this article if pointed out. Until next time.</p>
+]]></content:encoded>
+</item>
+<item>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<p>My struggles with social media are long-standing and will likely wage on for years to come (separate post about that later perhaps). That said, I was looking for ways to minimize the time I spend on any social sites across all my devices. Unfortunately, my friends send me links to things on Reddit and Twitter that I am interested in or need to read to be part of the conversation, and there are other cases like checking the match thread on r/chelseafc when one of our matches is on that I like doing and want to continue doing. The problem this poses is that on desktop it is easy to get sucked in if you are logged onto your own account because one thing will lead to another and you will (or at least I do) find yourself on your feed doomscrolling. Another problem is that these sites are just freaking terrible. Even without the absurd amounts of tracking (Reddit, or new Reddit at least, seems to log mouse movements too), the experience is just full of cruft and really slow and irritating. The mobile web experience is downright hostile, especially if you are not logged in. I really didn't want to keep these apps installed on my phone, and finally I don't have to.</p>
+
+<p>There are alternative frontends for each of these sites that are at the very least acceptable, or in my opinion significantly superior to the original sites. Here are the ones I use:</p>
+
+<ul>
+<li><a href="https://nitter.net">Nitter</a> for Twitter</li>
+<li><a href="https://teddit.net">Teddit</a> for Reddit</li>
+<li><a href="https://bibliogram.art">Bibliogram</a> for Instagram</li>
+<li><a href="https://invidious.snopyta.org/">Invidious</a> (now kind of abandonware) and <a href="https://freetubeapp.io/">FreeTube</a> for YouTube</li>
+</ul>
+
+<p>The advantages are manifold. Firstly, these are really fast and almost all features work without JavaScript enabled (Teddit iirc doesn't use JS at all). This makes them ideal for mobile usage even on shitty mobile net, and I also tend to do all my general purpose web browsing in a firefox profile that has JavaScript blocked. Further, they don't rely on the actual website or their APIs, which reduces the amount of tracking they can do to some extent. Finally, and this part is more important than I realized, they don't need you to, and in fact don't have any option for you to log into your account. This means no tailored feed, no urge to vote or indulge in comment flame wars, and no doomscrolling for the most part. </p>
+
+<p>Those interested in trying these can use the <a href="https://github.com/SimonBrazell/privacy-redirect">Privacy Redirect</a> extension on your browser of choice. I was using it until recently but have now switched to the more powerful <a href="https://github.com/einaregilsson/Redirector">Redirector</a> that lets me set up custom rules as I'd like. I also have the extension installed with these settings on my mobile Firefox browser.</p>
+
+<p>When someone sends me these links, I have them load up in these alternate sites by default without any effort, and I can close it out once I'm done. Short of ditching the sites entirely, this is perhaps the sanest alternative.</p>
+]]></content:encoded>
+</item>
+<item>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<p>The year was 2017. I was fresh off reading almost a hundred books in the previous year and raring to go again. My to-read lists on Goodreads and in notebooks and excel spreadsheets were overflowing with entries, most of them likely to be enjoyable. I was taking pride in being called "well-read" by peers, and just about beginning to feel the same way about myself. But I wasn't happy.</p>
+
+<p>In hindsight, it's easy to say I made a change in my life because I wasn't happy, but the truth is I never know if I'm happy or not on a given day. I just <em>am</em>. But I remember clear as day that on a particular day in 2017, I got rid of every single list I had. They were deleted, cast aside, and banished to oblivion. If you asked me why that day, I'd probably say <em>because I could.</em> </p>
+
+<p><em>Pudge, what you must understand about me is that I am a deeply unhappy person</em>, says a John Green character in Looking for Alaska. I suppose the part of me left buried in his body of work, the part I shamelessly resuscitated while watching the series adaptation of Looking for Alaska for Hulu, would likely refer to himself in a similar fashion. In many ways, it was true and perhaps still is. I've enjoyed reading since I picked up the habit at 4 or 5 years old. I've read hundreds of books, carried stacks of books home from the school library that the librarian would challenge me I wouldn't finish by the due date (I always won), and relentlessly pursued books in every shape or form I could find. But on that day in 2017, I felt like I didn't enjoy reading. That I wasn't reading for reading's sake, for enjoyment, for fulfillment, or for entertainment. I felt like I was reading to put numbers on a list- to be able to brag to a Facebook group that I was admin of at the time that I'd actually outread several of them that year, that somehow my being this prolific made me smarter, superior, better than them. And I'd probably get away with saying that I gave up this pursuit out of the goodness of my heart, realizing the poor grasp of reality that I held on so dearly to. Alas, introspection is a boon that comes in trickles to men of moderate privilege like myself, and my boon felt it was enough to let me know that I was exhausted trying to live up to this perception of myself.</p>
+
+<p>And so, it was done. I made a vow to myself that I would read only on my own terms, and that I'd follow a laissez-faire approach to any literary pursuits I follow and live a little vicariously, without the pressures that structures might impose. How do I feel about it 3 years later? There is some wistfulness about the whole "so many books in the world, so little time" shtick- certainly I've read fewer and fewer books year-on-year. Of course, surrounding conditions haven't necessarily enabled literary voracity, but that's alright because I had no targets, no expectations. Just a world of literature waiting for me to reach out. I don't think of myself as well-read anymore, but I've made peace with it. I enjoyed most of what I've read and am finding my way back to establishing a healthy reading habit. </p>
+
+<p>Probably couldn't have asked for more.</p>
+]]></content:encoded>
+</item>
+<item>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=25227181">On an interesting thread in HN today</a>, there was much discussion on the idea of reinventing the wheel in software projects and writing one's own static site generators. As someone fresh out of college where reinventing the wheel is not only encouraged but mandated in several areas to learn concepts, and also as someone who has "written" their own "static site generator", I feel like it's worth exploring this a little.</p>
+
+<p>I've had blogs in some shape or form before. Blogger, WordPress, Ghost, and more recently Jekyll, Hugo and Zola. On the surface they all produce a good enough output, and have a ton of features. I could have stuck to any of them and called it a day, I'm sure the tens of thousands (?) of bloggers who do aren't particularly dissatisfied with their weapon of choice, mostly because they have bigger things to be concerned about, like the content. And yet, I'm happier with my solution today than I ever was with any of these, and here's why:</p>
+
+<p>I've found that for simple blogs, especially hobby projects, you don't really need a WYSIWYG editor or an elaborate design or all kinds of funky tools, plugins and features that established CMS tools provide. Hell, I believe most of them don't even need to load several hundred kilobytes to a few megabytes of JavaScript to the user for eye-candy/obscure features either. If you can serve a static page with some minimal styling for readability, it's incredibly lightweight, likely doesn't need a CDN to be served quickly to viewers, and is just good design in general. This is my argument for using a static site generator. But why your own? </p>
+
+<p>I've found the Unix philosophy to be a nice guideline for a number of decisions in life. This is true for a blog workflow as well:</p>
+
+<ul>
+<li><p><em>Let each component do one thing, and do it well</em>: Posts are text files, written entirely in a text editor. The static site generator exclusively takes the post content and turns it into HTML. </p></li>
+<li><p><em>Expect the output of every program to become the input to another</em>: Again, posts are text files. They can be fed into any template for any formatting for the final site. The outputted HTML can be viewed locally in a browser as a file, served on a local server for live refresh, and uploaded directly to GitHub/GitLab pages or your own site for hosting. Each component's involvement is only in one step of the process, and each component is designed to be replaceable should it stop working or should a better option present itself in the near future. For instance, I could use something other than Markdown for formatting text, something other than vim for editing, something other than Python (or indeed the entire generator) for building the site, and some other hosting provider for, well, for hosting it.</p></li>
+</ul>
+
+<p>What these afford is simplicity- I get to know exactly what every step of my blog workflow does, and extensibility- if I want more features I can code them myself or seek assistance or contributions from the community. I prefer this minimal approach to the jack of all trades approach where the tool you use is already full of features you may never need, but they're there if you need them. This is why I wrote my own generator instead of using the several awesome ones available. There are merits to both approaches and I wouldn't be surprised that for commercial endeavours the established tools likely do the job better, are more reliable, and save time, effort, and money 90% of the time. And yet there are power users who swear by their own solution since they know it end-to-end and are not held back by arbitrary limitations of some other platform.</p>
+
+<p>I end this ramble with some quotes from the HN thread, with credit.</p>
+
+<p><a href="https://news.ycombinator.com/item?id=25249963">arpyzo's comment</a></p>
+
+<p><em>I completely understand the desire to build something practical that's your own.
+I just built a small web application framework that I can build some basic personal apps on top of. Just like the author's, it's "shitty". It lacks features, doesn't handle edge cases, isn't particularly secure or performant.
+None of that matters. It's locked up behind HTTP authentication and it's for my use only. It has exactly the features I desire, and none that I don't. I understand it top to bottom. It was fun to write and extend. It serves my needs perfectly. I didn't have to fight with, or conform to someone else's notion of how software should be built.</em></p>
+
+<p><a href="https://news.ycombinator.com/item?id=25251110">411111111111111's comment</a></p>
+
+<p><em>"don't reinvent the wheel" is specifically for projects which other people will be forced to maintain.
+You can reinvent the wheel as many times you want. If you however do that at work, your colleagues and your replacement after you left the job likely won't think too kindly of you.</em></p>
+
+<p><a href="https://news.ycombinator.com/item?id=25250012">bogwog's comment</a></p>
+
+<p><em>I spent about a day migrating my personal site from grav to hugo, and the main takeaway I got from that experience is that both of these "simple" static site generators are ridiculously over-engineered.
+I could slap something together with a few lines of Make or Python that does exactly what I need, in an hour or two. I could even hook it up to AWS and have it update automatically.
+Doing all of that is less time consuming and requires less effort than reading through the grav or hugo documentation, installing and setting everything up, and troubleshooting the inevitable problems.
+The only issue I have is that doing front-end web development/design is not something I enjoy, so grav and hugo's existing library of themes is very convenient. Convenient enough to put up with the other annoyances.</em></p>
+
+<p><a href="https://news.ycombinator.com/item?id=25250648">JasonFruit's comment</a></p>
+
+<p><em>For me, the reason was simpler: it took less effort to write an SSG than it did to learn any existing one, and I got the fun of doing it.</em></p>
+]]></content:encoded>
+</item>
+<item>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<p>In case you don't know, I've been writing <a href="https://github.com/RonitRay/ecstatic">my own static site generator in Python</a> to generate this site. The initial codebase was borrowed with thanks from <a href="https://blog.naveeraashraf.com/posts/make-static-site-generator-with-python/">Naveera Ashraf's very helpful blog post</a>. I have since put in some of my own code to implement the following:</p>
+
+<ol>
+<li>A homepage template with some formatting to show a bio and some relevant links aside from the blog feed. This works pretty well as a homepage for a personal site and is extensible to include fancy CSS and JS if someone is so inclined.</li>
+<li><p>One of the features mentioned in their post was:</p>
+
+<blockquote>
+  <p><em>One more thing that I want to do is to have the tags of each post in some kind of list so I can loop through them as I may want to make each tag into a clickable link</em></p>
+</blockquote>
+
+<p>The way they chose to implement it was to generate the tags for each post and display them as buttons below the post, but what one did with those buttons was up to them. Which is fair, but I wanted to build a system that could pick up unique tags and generate multiple separate pages of posts relevant to each tag. This is something that would have been trivial to do with some JS filtering, but I was adamant on keeping this site static, light and JS-free until I really needed it so I wanted a workaround and wrote one.</p>
+
+<ol>
+<li><p>A set of unique tags is built after scanning each post.</p>
+
+<div class="codeblock">
+<pre><code class='language-python'>
+python tags = []; 
+for post in posts_metadata: 
+    if post['blog']=='yes': 
+        tags.extend(post['tags'].split(', ')); 
+tags=list(set(tags)); 
+tags.sort();
+</code></pre>
+</div></li>
+<li><p>There is a 'tag' template that is meant to display all posts for a particular tag, which are passed to it by the generator.</p>
+
+<div class="codeblock">
+<pre><code class='language-html'>   
+{% for post in tagposts %}
+{% if post.blog == 'yes' %}
+    &lt;p&gt; {{post.date}} | &lt;a href="posts/{{ post.slug }}.html"&gt;{{post.title}}&lt;/a&gt;&lt;/p&gt;
+{% endif %}
+{% endfor %}
+</code></pre>
+</div></li>
+<li><p>This tag page is generated in my main generator program for every unique tag. We loop through the posts, find whether their tag list contains a particular tag, and then pass it in the list of posts to the template if it does.</p>
+
+<div class="codeblock">
+<pre><code class='language-python'>
+tag_template = env.get_template('tag.html')
+for tag in tags:
+    tagposts_metadata = [POSTS[post].metadata for post in POSTS if tag in POSTS[post].metadata['tags'].split(', ')]
+    tag_html = tag_template.render(tagposts=tagposts_metadata, tag=tag)
+    with open('output/posts/tag-'+tag+'.html', 'w') as file:
+        file.write(tag_html)
+</code></pre>
+</div></li>
+</ol></li>
+</ol>
+
+<p>Since all of the generation is done on my development/writing machine, only the static output is published to the site and it loads as fast as any static HTML for the user, no unnecessary CPU hogging needed. I'm almost positive this code is suboptimal because it's literally a quick and dirty way to get what I wanted. I'll either get around to making it better later, or, well, the kids will have something a little more substantial than incorrect grammar corrections to do next Hacktoberfest.</p>
+]]></content:encoded>
+</item>
+<item>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<h2>Education</h2>
+
+<p><strong>University of Engineering and Management, Kolkata</strong> (2015-2019) </p>
+
+<p>B.Tech. in Computer Science and Engineering, 9.45 CGPA</p>
+
+<p><strong>St. James' School, Kolkata</strong></p>
+
+<p>ISC (12th) 2015, Science with Computer Science Elective, 83.66%</p>
+
+<p>ICSE (10th) 2013, Science with Computer Applications Elective, 94.66%</p>
+
+<h2>Experience</h2>
+
+<p><strong>Assistant System Engineer- Tata Consultancy Services Ltd.</strong> : Kolkata, May 2019-present</p>
+
+<p>Full-stack web development- Angular 8, Java 11 + Spring Boot, Oracle DB.</p>
+
+<p><strong>Support Trainee- Tech Mahindra Ltd.</strong> : Kolkata, June-August 2017</p>
+
+<p>Trained on a live project involving Data Warehousing and Business Intelligence for a major telecom provider.</p>
+
+<p><strong>Summer Intern- Elogix Software Pvt. Ltd.</strong> : Kolkata, June 2016</p>
+
+<p>Developed static webpages using HTML/CSS/Bootstrap, handled MySQL databases, and used JasperReports (Java, SQL, XML) on Jaspersoft iReport for a client firm’s HRM system.</p>
+
+<h2>Projects and Publications</h2>
+
+<ul>
+<li><p>Ray, Roy, Guha, De et al, RASS: A Concurrency-Based Bitwise Symmetric Key Cryptographic Algorithm, 2016</p></li>
+<li><p>RK Basak et al, Hindu-Arabic Character Recognition using Mathematical Morphology, 2016</p></li>
+<li><p>Ant Colony Optimization, a Java implementation to solve Traveling Salesman Problem, November 2017.</p></li>
+</ul>
+
+<h2>Technical Skills</h2>
+
+<p>Java, JavaScript, TypeScript, Angular 8, HTML5, CSS3, Python, Git, Linux.</p>
+
+<h2>Achievements and Positions of Responsibility</h2>
+
+<ul>
+<li>Received Chancellor’s Award for Qualifying GATE 2019 with a rank of 4811.</li>
+<li>Received Vice-Chancellor’s Award for Best Scientific Mind- UEM Kolkata, 2018 and 2019</li>
+<li>Received Award for Academic Excellence- UEM Kolkata, 2015</li>
+<li>Event Coordinator and Member of Organizing Team, Ureckon 2019 &amp; 2018, annual techfest, UEM Kolkata</li>
+<li>Designed conference website, banners, brochures- 4th IEEE International Conference on Opto-Electronics and Applied Optics, UEM Kolkata, 2017</li>
+<li>Member of Online Reputation Management Team- UEM Kolkata, 2016</li>
+<li>UEM Kolkata Basketball First Team, 2016</li>
+</ul>
+]]></content:encoded>
+</item>
+<item>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<p>Some of my projects are:</p>
+
+<ol>
+<li><p><a href="https://github.com/RonitRay/personalwebsite">This site</a>- Clean, minimal homepage and blog with focus on speed and accessibility, and no JavaScript. Generated using a self-coded static site generator.</p></li>
+<li><p><a href="https://github.com/RonitRay/ecstatic">Ecstatic, a very basic static site generator written in Python</a>- Also happens to be the tool used to build this site. The project is pretty young, and can be extended infinitely, but I'm already very happy with it and implementing features as I go.</p></li>
+</ol>
+]]></content:encoded>
+</item>
+<item>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<p>One of the books I'm reading this week, <em>Make Time: How to Focus on what Matters Every Day</em> by Jake Knapp and John Zeratsky, which is, by the way, the least self-helpy self-help book I've read in a while, maybe ever, had this passage that really resonated with me:</p>
+
+<blockquote>
+  <p><em>I’ve been burned by fancy tools. Back in 2006, I discovered the perfect productivity software: a simple but powerful app called Mori that allowed for infinitely customizable note taking and filing. I was elated, and spent countless hours configuring Mori on my laptop and loading all my projects into it. And I was right: It was perfect. Mori became an extension of my brain.</em></p>
+</blockquote>
+
+<blockquote>
+  <p><em>But after a few months, things started breaking down. I upgraded my computer’s operating system, only to find that Mori wasn’t compatible with the new version. I’d want to look at my notes at home but realize I had left my laptop at work. And then the developer shut down Mori altogether. I was distraught.</em></p>
+</blockquote>
+
+<blockquote>
+  <p><em>That’s the other problem with fancy tools: they’re fragile. Anything from a technical glitch to my own forgetfulness could keep me from getting into Laser mode and spending time on my Highlight. After Mori vanished, I started using simple, readily available tools to manage my work: text files on my computer, notes on my phone, basic Post-its, free hotel pens, that sort of thing. More than ten years later, my everyday tools work as well as ever. And whenever I get tempted by a new fancy tool, I just remember Mori.</em></p>
+</blockquote>
+
+<p>Now I've never used Mori, but as I have been getting acquainted with the online productivity/self-improvement scene over the last few months, there has been a lot of talk about note-taking tools, workflows, and techniques. I've been drawn to it partly out of an appreciation for new technology as well as a desire to integrate note-taking into my life with some level of seriousness.</p>
+
+<p>I'd like to think I value privacy more than most other things, and try to consider the privacy-convenience tradeoff for everything I do or adopt. So my findings about existing note-taking platforms were a little underwhelming: </p>
+
+<ul>
+<li><a href="www.evernote.com">Evernote</a> is encrypted "in-transit", which is a nice to-have, but not really useful against anything other than MITM attacks. My understanding is my notes would be stored in plaintext or some kind of basic encoding on their servers, that is fully accessible and decryptable by them. I can encrypt individual notes but there's no way I'd do it manually for every single note. It's not convenient.</li>
+<li><a href="https://www.onenote.com/">OneNote</a> claims to be encrypted at rest, which is not bad, but the keys are still generated, owned and controlled by Microsoft. I'd be trusting them with my data.</li>
+<li><a href="https://www.notion.so/">Notion</a> doesn't even bother to talk of encryption, their privacy policy is a little invasive-sounding to my paranoid brain, and essentially boils down to <em>trust us</em>, which I suppose is fair for this kind of service but I have no reason to trust them, any more than Microsoft for example.</li>
+<li><a href="https://standardnotes.org/">Standard Notes</a> is end-to-end encrypted and really awesome, I stuck with it for the longest time but it doesn't support Markdown on the free tier and the premium tier is a little expensive for my working-class Indian wallet that only started earning last year.</li>
+<li><a href="https://joplinapp.org/">Joplin</a> is very usable and was finally what I landed upon. Markdown is really easy to use, and it supported E2EE, with the caveat that I had to use another cloud storage service like Dropbox/OneDrive to store the encrypted notes on the cloud. Which means I am trusting at least two parties (Joplin and the cloud storage provider) to handle my data safely and really stay afloat.</li>
+</ul>
+
+<p>This comes down to the passage from <em>Make Time.</em> I was already using Markdown in Joplin, and exporting my notes to a folder structure was trivial. I figured there's really no reason for my workflow to have to rely on either Joplin or a cloud provider for sync. Here's what I did:</p>
+
+<ol>
+<li>"Notebooks" and nested notebooks/sections are just simple folders in a directory structure. Zero restrictions and it makes sense everywhere.</li>
+<li>Notes are markdown files that are readable as-is as well as convertable to a prettier form, supporting web formatting for things like lists, tables, code snippets and blockquotes which I needed.</li>
+<li>Full text search with grep is the easiest thing ever. </li>
+<li>I edit notes in Vim, my text editor of choice on Linux desktop. There's no reason I wouldn't be able to edit them in any other editor, because they're text files.</li>
+<li>I also use the <a href="https://github.com/JamshedVesuna/vim-markdown-preview">vim-markdown-preview add-on</a> because it's very minimal, and doesn't need me to install NodeJS or some other bloated framework. Sure, no live preview, but rendering the note in a browser window beside the editor takes milliseconds and is just a hotkey away at any point in time.</li>
+<li>I use <a href="https://syncthing.net/">Syncthing</a> to locally sync my entire notes folder with my Android phone. It uses my local network so my files never travel over the internet (you can literally disconnect your ethernet cable to be sure). It is very easy to use once set up, and since the files themselves are really light (again, text files, woo-freaking-hoo!) sync is a matter of seconds even at scale.</li>
+<li>On my android phone, my notes viewer/editor of choice is the very powerful and versatile open-source <a href="https://play.google.com/store/apps/details?id=net.gsantner.markor&amp;hl=en_US&amp;gl=US">Markor</a>, which has no internet permissions (and I've blocked from accessing the internet anyway via a firewall, just in case) and offers a great Markdown viewer as well as WYSIWYG editor if I need to write notes on the phone.</li>
+</ol>
+
+<p>This is pretty much everything I needed, brought down to established open-source components and standards where possible. It is widely compatible, very portable, and easy enough to replace any one component if I need to, which is great. I'll figure out a redundancy solution eventually, but I reckon it's just a matter of setting up a backup script on a crontab or adding the notes folder to an rsync/Timeshift backup if I so desire.</p>
+
+<p>I'm going to slug it out with this setup for a while at least, and see if it fits the bill. There might be parts of it I revisit in the future to improve usability/convenience/security, but time will tell. For now, I'm happy. Which is rare these days.</p>
 ]]></content:encoded>
 </item>
 </channel>
