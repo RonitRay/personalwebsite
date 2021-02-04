@@ -8,7 +8,7 @@
 <title>Crypto- A Regret and A Request</title>
 <link>https://ronitray.neocities.org/posts/crypto-regret-request.html</link>
 <pubDate>Fri, 22 Jan 2021</pubDate>
-
+<description>Musings on rolling your own crypto and my academic misadventures.</description>
 <content:encoded><![CDATA[<p>In my second year in university as a CS major, I pitched an academic paper to an IEEE conference along with three colleagues. The paper highlighted a "novel" symmetric encryption scheme that we'd spent the better part of the summer brainstorming. It wasn't without its merits, and seemed to fulfill <a href="https://sites.google.com/site/kryptosgrapheinen/overview/objectives">the absolute basics of cryptography</a> well enough. We mostly thought of it as a toy project, and went ahead to make an encrypted chat application, where keys were generated on the initiating device and shared to the recipient via an implementation of the <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Diffie-Hellman Key Exchange</a>. At the time, everyone involved was rather excited about it, and while we didn't think of ourselves as cryptographic pioneers, having the paper accepted certainly was a matter of pride and added what we felt was some legitimacy to our efforts.</p>
 
 <p>It took some time before my interest in security and privacy led me to realize the issues with what we had cooked up. It was slow, and lacked forward secrecy in any form whatsoever, and that was just the beginning. We hadn't yet come across the tenet that <a href="https://resources.infosecinstitute.com/topic/the-dangers-of-rolling-your-own-encryption/">you don't roll your own crypto.</a> Toy projects are fine, they're educational and can help you understand a lot of things that lectures might not. But these ideas once cemented, if encouraged unconditionally, legitimized, and not corrected, can lead to any of us deploying their own ham-fisted encryption in a production application, and that can have disastrous consequences.</p>
@@ -46,7 +46,7 @@
 <title>Signal: Down, but Not Out</title>
 <link>https://ronitray.neocities.org/posts/signal-down.html</link>
 <pubDate>Sat, 16 Jan 2021</pubDate>
-
+<description>Signal is down, should you leave? (please don't)</description>
 <content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=25793483">Signal services were down</a> at night (IST) on Friday, 15th January, 2021.</p>
 
 <p>As of the time this article goes up, services remain suspended. People who have moved their entire, or a sizable portion of their networks over recently are grasping at ways to contact each other again, some falling back to greener pastures like WhatsApp, and others looking for alternatives already.</p>
@@ -68,7 +68,7 @@
 <title>GitHub Pages to Neocities, a New Home</title>
 <link>https://ronitray.neocities.org/posts/gh-to-neocities.html</link>
 <pubDate>Thu, 14 Jan 2021</pubDate>
-
+<description>My blog has a new home now, and it's wonderful.</description>
 <content:encoded><![CDATA[<p>Today, I moved this website over from GitHub Pages to Neocities. </p>
 
 <p>There's not much to the decision, really. There are several hosting options for static sites like GH Pages, GitLab Pages, Netlify, and now even Cloudflare Pages. Anyone starting out should be more than fine picking any of these options. But here's what drew me to Neocities.</p>
@@ -86,7 +86,7 @@
 <title>Why I Don't Use Telegram</title>
 <link>https://ronitray.neocities.org/posts/why-i-dont-use-telegram.html</link>
 <pubDate>Sun, 10 Jan 2021</pubDate>
-
+<description>In light of recent events, people are dropping WhatsApp. Here's why Telegram is a bad choice for your messaging needs.</description>
 <content:encoded><![CDATA[<p>WhatsApp recently rolled out <a href="https://arstechnica.com/tech-policy/2021/01/whatsapp-users-must-share-their-data-with-facebook-or-stop-using-the-app/">changes to its privacy policy</a> that highlight how user data is shared with Facebook in a common pool of data from all Facebook-owned services. While this just sheds light on practices that one must assume have been in play since WhatsApp was acquired by Facebook 6 years ago, putting it front and center seems to have been enough to give a not-insignificant portion of its user base a sense of unease. A number of people have chosen to move to other messaging applications, either dropping WhatsApp entirely or at least shifting as much of their network over to other platforms as possible. While this is an admirable pursuit, one that I have been vocally in favour of for the last few years, there are still good and bad options among the available alternatives.</p>
 
 <p>If the title wasn't clear enough, I don't believe Telegram is a good fit for a WhatsApp replacement if you are a privacy-conscious individual. I believe it is a significant security downgrade, and potentially a privacy liability as well.</p>
@@ -120,7 +120,7 @@
 <title>Bucking Social Media Attraction with Light Frontends</title>
 <link>https://ronitray.neocities.org/posts/alt-social-frontends.html</link>
 <pubDate>Sat, 02 Jan 2021</pubDate>
-
+<description>Alternative frontends for popular social networks.</description>
 <content:encoded><![CDATA[<p>My struggles with social media are long-standing and will likely wage on for years to come (separate post about that later perhaps). That said, I was looking for ways to minimize the time I spend on any social sites across all my devices. Unfortunately, my friends send me links to things on Reddit and Twitter that I am interested in or need to read to be part of the conversation, and there are other cases like checking the match thread on r/chelseafc when one of our matches is on that I like doing and want to continue doing. The problem this poses is that on desktop it is easy to get sucked in if you are logged onto your own account because one thing will lead to another and you will (or at least I do) find yourself on your feed doomscrolling. Another problem is that these sites are just freaking terrible. Even without the absurd amounts of tracking (Reddit, or new Reddit at least, seems to log mouse movements too), the experience is just full of cruft and really slow and irritating. The mobile web experience is downright hostile, especially if you are not logged in. I really didn't want to keep these apps installed on my phone, and finally I don't have to.</p>
 
 <p>There are alternative frontends for each of these sites that are at the very least acceptable, or in my opinion significantly superior to the original sites. Here are the ones I use:</p>
@@ -143,7 +143,7 @@
 <title>On Letting Go</title>
 <link>https://ronitray.neocities.org/posts/on-letting-go.html</link>
 <pubDate>Sat, 12 Dec 2020</pubDate>
-
+<description>How my life changed when I gave up a structured approach for some pursuits</description>
 <content:encoded><![CDATA[<p>The year was 2017. I was fresh off reading almost a hundred books in the previous year and raring to go again. My to-read lists on Goodreads and in notebooks and excel spreadsheets were overflowing with entries, most of them likely to be enjoyable. I was taking pride in being called "well-read" by peers, and just about beginning to feel the same way about myself. But I wasn't happy.</p>
 
 <p>In hindsight, it's easy to say I made a change in my life because I wasn't happy, but the truth is I never know if I'm happy or not on a given day. I just <em>am</em>. But I remember clear as day that on a particular day in 2017, I got rid of every single list I had. They were deleted, cast aside, and banished to oblivion. If you asked me why that day, I'd probably say <em>because I could.</em> </p>
@@ -159,7 +159,7 @@
 <title>On Reinventing the Wheel</title>
 <link>https://ronitray.neocities.org/posts/on-reinventing-the-wheel.html</link>
 <pubDate>Mon, 30 Nov 2020</pubDate>
-
+<description>Or, why I did what I did with this site</description>
 <content:encoded><![CDATA[<p><a href="https://news.ycombinator.com/item?id=25227181">On an interesting thread in HN today</a>, there was much discussion on the idea of reinventing the wheel in software projects and writing one's own static site generators. As someone fresh out of college where reinventing the wheel is not only encouraged but mandated in several areas to learn concepts, and also as someone who has "written" their own "static site generator", I feel like it's worth exploring this a little.</p>
 
 <p>I've had blogs in some shape or form before. Blogger, WordPress, Ghost, and more recently Jekyll, Hugo and Zola. On the surface they all produce a good enough output, and have a ton of features. I could have stuck to any of them and called it a day, I'm sure the tens of thousands (?) of bloggers who do aren't particularly dissatisfied with their weapon of choice, mostly because they have bigger things to be concerned about, like the content. And yet, I'm happier with my solution today than I ever was with any of these, and here's why:</p>
@@ -204,7 +204,7 @@ The only issue I have is that doing front-end web development/design is not some
 <title>Tags are a thing now, I guess</title>
 <link>https://ronitray.neocities.org/posts/tags.html</link>
 <pubDate>Thu, 05 Nov 2020</pubDate>
-
+<description>The super-basic static site generator I wrote now supports tags.</description>
 <content:encoded><![CDATA[<p>In case you don't know, I've been writing <a href="https://github.com/RonitRay/ecstatic">my own static site generator in Python</a> to generate this site. The initial codebase was borrowed with thanks from <a href="https://blog.naveeraashraf.com/posts/make-static-site-generator-with-python/">Naveera Ashraf's very helpful blog post</a>. I have since put in some of my own code to implement the following:</p>
 
 <ol>
@@ -263,7 +263,7 @@ for tag in tags:
 <title>Leaving Note-Taking Applications</title>
 <link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
 <pubDate>Thu, 15 Oct 2020</pubDate>
-
+<description>In which I attempt to simplify the way I take notes.</description>
 <content:encoded><![CDATA[<p>One of the books I'm reading this week, <em>Make Time: How to Focus on what Matters Every Day</em> by Jake Knapp and John Zeratsky, which is, by the way, the least self-helpy self-help book I've read in a while, maybe ever, had this passage that really resonated with me:</p>
 
 <blockquote>
