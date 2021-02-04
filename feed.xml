@@ -200,5 +200,181 @@ The only issue I have is that doing front-end web development/design is not some
 <p><em>For me, the reason was simpler: it took less effort to write an SSG than it did to learn any existing one, and I got the fun of doing it.</em></p>
 ]]></content:encoded>
 </item>
+<item>
+<title>Tags are a thing now, I guess</title>
+<link>https://ronitray.neocities.org/posts/tags.html</link>
+<pubdate>Thu, 05 Nov 2020</pubdate>
+
+<content:encoded><![CDATA[<p>In case you don't know, I've been writing <a href="https://github.com/RonitRay/ecstatic">my own static site generator in Python</a> to generate this site. The initial codebase was borrowed with thanks from <a href="https://blog.naveeraashraf.com/posts/make-static-site-generator-with-python/">Naveera Ashraf's very helpful blog post</a>. I have since put in some of my own code to implement the following:</p>
+
+<ol>
+<li>A homepage template with some formatting to show a bio and some relevant links aside from the blog feed. This works pretty well as a homepage for a personal site and is extensible to include fancy CSS and JS if someone is so inclined.</li>
+<li><p>One of the features mentioned in their post was:</p>
+
+<blockquote>
+  <p><em>One more thing that I want to do is to have the tags of each post in some kind of list so I can loop through them as I may want to make each tag into a clickable link</em></p>
+</blockquote>
+
+<p>The way they chose to implement it was to generate the tags for each post and display them as buttons below the post, but what one did with those buttons was up to them. Which is fair, but I wanted to build a system that could pick up unique tags and generate multiple separate pages of posts relevant to each tag. This is something that would have been trivial to do with some JS filtering, but I was adamant on keeping this site static, light and JS-free until I really needed it so I wanted a workaround and wrote one.</p>
+
+<ol>
+<li><p>A set of unique tags is built after scanning each post.</p>
+
+<div class="codeblock">
+<pre><code class='language-python'>
+python tags = []; 
+for post in posts_metadata: 
+    if post['blog']=='yes': 
+        tags.extend(post['tags'].split(', ')); 
+tags=list(set(tags)); 
+tags.sort();
+</code></pre>
+</div></li>
+<li><p>There is a 'tag' template that is meant to display all posts for a particular tag, which are passed to it by the generator.</p>
+
+<div class="codeblock">
+<pre><code class='language-html'>   
+{% for post in tagposts %}
+{% if post.blog == 'yes' %}
+    &lt;p&gt; {{post.date}} | &lt;a href="posts/{{ post.slug }}.html"&gt;{{post.title}}&lt;/a&gt;&lt;/p&gt;
+{% endif %}
+{% endfor %}
+</code></pre>
+</div></li>
+<li><p>This tag page is generated in my main generator program for every unique tag. We loop through the posts, find whether their tag list contains a particular tag, and then pass it in the list of posts to the template if it does.</p>
+
+<div class="codeblock">
+<pre><code class='language-python'>
+tag_template = env.get_template('tag.html')
+for tag in tags:
+    tagposts_metadata = [POSTS[post].metadata for post in POSTS if tag in POSTS[post].metadata['tags'].split(', ')]
+    tag_html = tag_template.render(tagposts=tagposts_metadata, tag=tag)
+    with open('output/posts/tag-'+tag+'.html', 'w') as file:
+        file.write(tag_html)
+</code></pre>
+</div></li>
+</ol></li>
+</ol>
+
+<p>Since all of the generation is done on my development/writing machine, only the static output is published to the site and it loads as fast as any static HTML for the user, no unnecessary CPU hogging needed. I'm almost positive this code is suboptimal because it's literally a quick and dirty way to get what I wanted. I'll either get around to making it better later, or, well, the kids will have something a little more substantial than incorrect grammar corrections to do next Hacktoberfest.</p>
+]]></content:encoded>
+</item>
+<item>
+<title>Curriculum Vitae</title>
+<link>https://ronitray.neocities.org/posts/cv.html</link>
+<pubdate>Fri, 16 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<h2>Education</h2>
+
+<p><strong>University of Engineering and Management, Kolkata</strong> (2015-2019) </p>
+
+<p>B.Tech. in Computer Science and Engineering, 9.45 CGPA</p>
+
+<p><strong>St. James' School, Kolkata</strong></p>
+
+<p>ISC (12th) 2015, Science with Computer Science Elective, 83.66%</p>
+
+<p>ICSE (10th) 2013, Science with Computer Applications Elective, 94.66%</p>
+
+<h2>Experience</h2>
+
+<p><strong>Assistant System Engineer- Tata Consultancy Services Ltd.</strong> : Kolkata, May 2019-present</p>
+
+<p>Full-stack web development- Angular 8, Java 11 + Spring Boot, Oracle DB.</p>
+
+<p><strong>Support Trainee- Tech Mahindra Ltd.</strong> : Kolkata, June-August 2017</p>
+
+<p>Trained on a live project involving Data Warehousing and Business Intelligence for a major telecom provider.</p>
+
+<p><strong>Summer Intern- Elogix Software Pvt. Ltd.</strong> : Kolkata, June 2016</p>
+
+<p>Developed static webpages using HTML/CSS/Bootstrap, handled MySQL databases, and used JasperReports (Java, SQL, XML) on Jaspersoft iReport for a client firm’s HRM system.</p>
+
+<h2>Projects and Publications</h2>
+
+<ul>
+<li><p>Ray, Roy, Guha, De et al, RASS: A Concurrency-Based Bitwise Symmetric Key Cryptographic Algorithm, 2016</p></li>
+<li><p>RK Basak et al, Hindu-Arabic Character Recognition using Mathematical Morphology, 2016</p></li>
+<li><p>Ant Colony Optimization, a Java implementation to solve Traveling Salesman Problem, November 2017.</p></li>
+</ul>
+
+<h2>Technical Skills</h2>
+
+<p>Java, JavaScript, TypeScript, Angular 8, HTML5, CSS3, Python, Git, Linux.</p>
+
+<h2>Achievements and Positions of Responsibility</h2>
+
+<ul>
+<li>Received Chancellor’s Award for Qualifying GATE 2019 with a rank of 4811.</li>
+<li>Received Vice-Chancellor’s Award for Best Scientific Mind- UEM Kolkata, 2018 and 2019</li>
+<li>Received Award for Academic Excellence- UEM Kolkata, 2015</li>
+<li>Event Coordinator and Member of Organizing Team, Ureckon 2019 &amp; 2018, annual techfest, UEM Kolkata</li>
+<li>Designed conference website, banners, brochures- 4th IEEE International Conference on Opto-Electronics and Applied Optics, UEM Kolkata, 2017</li>
+<li>Member of Online Reputation Management Team- UEM Kolkata, 2016</li>
+<li>UEM Kolkata Basketball First Team, 2016</li>
+</ul>
+]]></content:encoded>
+</item>
+<item>
+<title>Projects</title>
+<link>https://ronitray.neocities.org/posts/projects.html</link>
+<pubdate>Fri, 16 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<p>Some of my projects are:</p>
+
+<ol>
+<li><p><a href="https://github.com/RonitRay/personalwebsite">This site</a>- Clean, minimal homepage and blog with focus on speed and accessibility, and no JavaScript. Generated using a self-coded static site generator.</p></li>
+<li><p><a href="https://github.com/RonitRay/ecstatic">Ecstatic, a very basic static site generator written in Python</a>- Also happens to be the tool used to build this site. The project is pretty young, and can be extended infinitely, but I'm already very happy with it and implementing features as I go.</p></li>
+</ol>
+]]></content:encoded>
+</item>
+<item>
+<title>Leaving Note-Taking Applications</title>
+<link>https://ronitray.neocities.org/posts/notes-workflow.html</link>
+<pubdate>Thu, 15 Oct 2020</pubdate>
+
+<content:encoded><![CDATA[<p>One of the books I'm reading this week, <em>Make Time: How to Focus on what Matters Every Day</em> by Jake Knapp and John Zeratsky, which is, by the way, the least self-helpy self-help book I've read in a while, maybe ever, had this passage that really resonated with me:</p>
+
+<blockquote>
+  <p><em>I’ve been burned by fancy tools. Back in 2006, I discovered the perfect productivity software: a simple but powerful app called Mori that allowed for infinitely customizable note taking and filing. I was elated, and spent countless hours configuring Mori on my laptop and loading all my projects into it. And I was right: It was perfect. Mori became an extension of my brain.</em></p>
+</blockquote>
+
+<blockquote>
+  <p><em>But after a few months, things started breaking down. I upgraded my computer’s operating system, only to find that Mori wasn’t compatible with the new version. I’d want to look at my notes at home but realize I had left my laptop at work. And then the developer shut down Mori altogether. I was distraught.</em></p>
+</blockquote>
+
+<blockquote>
+  <p><em>That’s the other problem with fancy tools: they’re fragile. Anything from a technical glitch to my own forgetfulness could keep me from getting into Laser mode and spending time on my Highlight. After Mori vanished, I started using simple, readily available tools to manage my work: text files on my computer, notes on my phone, basic Post-its, free hotel pens, that sort of thing. More than ten years later, my everyday tools work as well as ever. And whenever I get tempted by a new fancy tool, I just remember Mori.</em></p>
+</blockquote>
+
+<p>Now I've never used Mori, but as I have been getting acquainted with the online productivity/self-improvement scene over the last few months, there has been a lot of talk about note-taking tools, workflows, and techniques. I've been drawn to it partly out of an appreciation for new technology as well as a desire to integrate note-taking into my life with some level of seriousness.</p>
+
+<p>I'd like to think I value privacy more than most other things, and try to consider the privacy-convenience tradeoff for everything I do or adopt. So my findings about existing note-taking platforms were a little underwhelming: </p>
+
+<ul>
+<li><a href="www.evernote.com">Evernote</a> is encrypted "in-transit", which is a nice to-have, but not really useful against anything other than MITM attacks. My understanding is my notes would be stored in plaintext or some kind of basic encoding on their servers, that is fully accessible and decryptable by them. I can encrypt individual notes but there's no way I'd do it manually for every single note. It's not convenient.</li>
+<li><a href="https://www.onenote.com/">OneNote</a> claims to be encrypted at rest, which is not bad, but the keys are still generated, owned and controlled by Microsoft. I'd be trusting them with my data.</li>
+<li><a href="https://www.notion.so/">Notion</a> doesn't even bother to talk of encryption, their privacy policy is a little invasive-sounding to my paranoid brain, and essentially boils down to <em>trust us</em>, which I suppose is fair for this kind of service but I have no reason to trust them, any more than Microsoft for example.</li>
+<li><a href="https://standardnotes.org/">Standard Notes</a> is end-to-end encrypted and really awesome, I stuck with it for the longest time but it doesn't support Markdown on the free tier and the premium tier is a little expensive for my working-class Indian wallet that only started earning last year.</li>
+<li><a href="https://joplinapp.org/">Joplin</a> is very usable and was finally what I landed upon. Markdown is really easy to use, and it supported E2EE, with the caveat that I had to use another cloud storage service like Dropbox/OneDrive to store the encrypted notes on the cloud. Which means I am trusting at least two parties (Joplin and the cloud storage provider) to handle my data safely and really stay afloat.</li>
+</ul>
+
+<p>This comes down to the passage from <em>Make Time.</em> I was already using Markdown in Joplin, and exporting my notes to a folder structure was trivial. I figured there's really no reason for my workflow to have to rely on either Joplin or a cloud provider for sync. Here's what I did:</p>
+
+<ol>
+<li>"Notebooks" and nested notebooks/sections are just simple folders in a directory structure. Zero restrictions and it makes sense everywhere.</li>
+<li>Notes are markdown files that are readable as-is as well as convertable to a prettier form, supporting web formatting for things like lists, tables, code snippets and blockquotes which I needed.</li>
+<li>Full text search with grep is the easiest thing ever. </li>
+<li>I edit notes in Vim, my text editor of choice on Linux desktop. There's no reason I wouldn't be able to edit them in any other editor, because they're text files.</li>
+<li>I also use the <a href="https://github.com/JamshedVesuna/vim-markdown-preview">vim-markdown-preview add-on</a> because it's very minimal, and doesn't need me to install NodeJS or some other bloated framework. Sure, no live preview, but rendering the note in a browser window beside the editor takes milliseconds and is just a hotkey away at any point in time.</li>
+<li>I use <a href="https://syncthing.net/">Syncthing</a> to locally sync my entire notes folder with my Android phone. It uses my local network so my files never travel over the internet (you can literally disconnect your ethernet cable to be sure). It is very easy to use once set up, and since the files themselves are really light (again, text files, woo-freaking-hoo!) sync is a matter of seconds even at scale.</li>
+<li>On my android phone, my notes viewer/editor of choice is the very powerful and versatile open-source <a href="https://play.google.com/store/apps/details?id=net.gsantner.markor&amp;hl=en_US&amp;gl=US">Markor</a>, which has no internet permissions (and I've blocked from accessing the internet anyway via a firewall, just in case) and offers a great Markdown viewer as well as WYSIWYG editor if I need to write notes on the phone.</li>
+</ol>
+
+<p>This is pretty much everything I needed, brought down to established open-source components and standards where possible. It is widely compatible, very portable, and easy enough to replace any one component if I need to, which is great. I'll figure out a redundancy solution eventually, but I reckon it's just a matter of setting up a backup script on a crontab or adding the notes folder to an rsync/Timeshift backup if I so desire.</p>
+
+<p>I'm going to slug it out with this setup for a while at least, and see if it fits the bill. There might be parts of it I revisit in the future to improve usability/convenience/security, but time will tell. For now, I'm happy. Which is rare these days.</p>
+]]></content:encoded>
+</item>
 </channel>
 </rss>
