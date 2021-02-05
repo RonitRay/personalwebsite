@@ -45,3 +45,8 @@ a:hover{
     background-color: #161 /*#00ccff*/;
     text-decoration: none;
 }
+
+#footer {
+    font-size: 75%;
+    text-align:center;
+}
