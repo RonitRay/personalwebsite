@@ -51,3 +51,7 @@ a:hover{
     font-size: 75%;
     text-align:center;
 }
+
+td{
+    padding: 5px;
+}
