@@ -32,7 +32,7 @@ unless the economic structures underlying these systems are overhauled completel
 
 <p>Desktop: For Windows, <a href="https://www.microsoft.com/en-us/p/newsflow/9nblggh58s5r?activetab=pivot:overviewtab">NewsFlow</a> seems to be a pretty good option. Mac users can use <a href="https://www.reederapp.com/">Reeder</a>, which is pretty popular. Linux users have quite a few options available to them. For a more traditional GUI experience, I recommend <a href="https://gitlab.com/news-flash/news_flash_gtk">NewsFlash</a>, <a href="https://lzone.de/liferea/">Liferea</a> or <a href="https://quiterss.org/">QuiteRSS</a>. However, terminal users will find a lot of value in <a href="https://newsboat.org/">newsboat</a> or <a href="https://github.com/skeeto/elfeed">elfeed</a> if you use emacs.</p>
 
-<p>Mobile: On Android, the best reader I have found is Flym. If you're using any cross-platform service, their app/PWA is likely to be good too, and some 3rd party clients also let you hook them up to these services to sync your reading history.</p>
+<p>Mobile: On Android, the best reader I have found is <a href="https://play.google.com/store/apps/details?id=net.frju.flym&amp;hl=en_US&amp;gl=US">Flym</a>. <a href="https://www.reederapp.com/">Reeder</a> (linked above for MacOS) has an iOS client as well. If you're using any cross-platform service, their app/PWA is likely to be good too, and some 3rd party clients also let you hook them up to these services to sync your reading history.</p>
 
 <p><strong>Finding RSS Feeds</strong></p>
 
