@@ -66,5 +66,5 @@ td{
 .booktable>th, td{
     border-collapse: collapse;
     border:1px solid black;
-    padding: 5%;
+    padding-right: 5%;
 }
