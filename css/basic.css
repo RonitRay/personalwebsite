@@ -60,5 +60,10 @@ td{
     width:100%;
     border-collapse: collapse;
     border:1px solid black;
-    table-layout: fixed;
+    table-layout: fixed;    
+}
+
+.booktable>th, td{
+    border-collapse: collapse;
+    border:1px solid black;
 }
