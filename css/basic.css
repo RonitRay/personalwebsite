@@ -59,12 +59,12 @@ td{
 .booktable{
     width:100%;
     border-collapse: collapse;
-    border:1px solid black;
+    /*border:1px solid black;*/
     table-layout: fixed;    
 }
 
 .booktable>th, td{
     border-collapse: collapse;
-    border:1px solid black;
+    /*border:1px solid black;*/
     padding-right: 5%;
 }
