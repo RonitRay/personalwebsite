@@ -68,3 +68,8 @@ td{
     /*border:1px solid black;*/
     padding-right: 5%;
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
