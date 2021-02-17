@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/basic.css">
+    <title>
+Ecstatic Documentation
+ | Ronit Ray</title>
+    
+</head>
+<body class="container">
+    
+    
+
+<div id='post-top'>
+        <h1>Ecstatic Documentation</h1>
+        <h3><a href="https://ronitray.neocities.org">Ronit Ray</a></h3>
+        
+</div>
+<p>
+        <h2>Contents</h2>
+
+<ol>
+<li><a href="#what-is-ecstatic">What Is Ecstatic?</a></li>
+<li><a href="#installing">Installing</a></li>
+<li><a href="#folder-structure">Folder Structure</a></li>
+</ol>
+
+<div id='what-is-ecstatic'>
+
+## What is Ecstatic?
+
+Ecstatic is a static site generator. It is a python program that makes use of, primarily, the jinja2 template engine to generate a complete website. It is ideal for blogs and/or personal/company websites.
+</div>
+
+<div id='installing'>
+
+## Installing
+
+Note: You need to have python installed on your system to use ecstatic. It has been built using Python 3+, and not tested on 2.x. It may work, but please don't expect support on deprecated versions.
+
+Once you have installed python on your system, go ahead and clone the git repo.
+
+<div class='codeblock'>
+<pre>
+<code>
+$ git clone https://github.com/RonitRay/ecstatic.git
+</code>
+</pre>
+</div>
+
+<p>This downloads the generator as well as some boilerplate templates and sample files to get you started right away.</p>
+
+<p>Before you start, there are some python dependencies you must install. I recommend using a virtual environment or <code>pipenv</code> within the ecstatic folder for containerization and to not affect your system in any way.</p>
+
+<div class='codeblock'>
+<pre>
+<code>
+$ pipenv shell
+</code>
+</pre>
+</div>
+
+<div class='codeblock'>
+<pre>
+<code>
+$ pip3 install datetime jinja2 markdown2
+</code>
+</pre>
+</div>
+
+<p>You should now be all set.</p>
+
+<p></div></p>
+
+<div id='folder-structure'>
+
+## Folder Structure
+
+The basic principle for operation is:
+
+- The ```drafts``` folder is for all posts you are working on but don't want to publish yet, written in ```markdown (.md)``` format. 
+- The ```content``` folder consists of all your finished blog posts or content pages. Remember to move your markdown file from drafts to content if you want to publish it.
+- The ```templates``` folder allows you to create templates in HTML with some python logic as per the jinja2 specification.
+- The ```output``` folder will consist of the generated site, as well as any CSS or images that you would like to have on the site.
+
+</div>
+
+<div id='understanding-templates'>
+
+## Understanding Templates
+
+Templates are a kind of skeleton that define how any page of a particular type (eg. home, article etc) is to be structured.
+
+Templates in jinja2 exist to extend static HTML and provide scope for content to be dynamically inserted into placeholder 'blocks' using Python logic.
+</div>
+
+</p>
+
+<br>
+<a href="https://ronitray.neocities.org">back to Home</a>
+<br>
+<br>
+<div id="footer">
+&copy; Copyright 2020, Ronit Ray.
+
+This blog is also available as <a href="https://ronitray.neocities.org/feed.xml">an RSS feed.</a>
+</div>
+
+
+
+    <br>
+
+</body>
+</html>

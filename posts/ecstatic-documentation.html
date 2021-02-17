@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/basic.css">
+    <title>
+        Ecstatic Documentation
+        | Ronit Ray</title>
+
+</head>
+
+<body class="container">
+
+
+
+    <div id='post-top'>
+        <h1>Ecstatic v1.0 Documentation</h1>
+        <h3><a href="https://ronitray.neocities.org">Ronit Ray</a></h3>
+
+    </div>
+
+    <div id='contents'>
+        <h2>Contents</h2>
+        <ol>
+            <li>
+                <a href='#what-is-ecstatic'>What is Ecstatic?</a>
+            </li>
+            <li>
+                <a href='#installing'>Installing</a>
+            </li>
+            <li>
+                <a href='#folder-structure'>Folder Structure</a>
+            </li>
+            <li>
+                <a href='#understanding-templates'>Understanding Templates</a>
+                <br>
+                <ol>
+                    <li><a href='#layout-template'>The layout template</a></li>
+                    <li><a href='#home-template'>Basic home template</a></li>
+                    <li><a href='#post-template'>Basic post template</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href='#new-post'>New Post</a>
+            </li>
+            <li>
+                <a href='#generate'>Generate the Site</a>
+            </li>
+            <li>
+                <a href='#next-steps'>Next Steps</a>
+            </li>
+        </ol>
+    </div>
+
+    <div id='what-is-ecstatic'>
+
+        <h2>What is Ecstatic?</h2>
+
+        <p>Ecstatic is a static site generator. It is a python program that makes use of, primarily, the Jinja template
+            engine to generate a complete website. It is ideal for blogs and/or personal/company sites.</p>
+    </div>
+
+    <div id='installing'>
+
+        <h2>Installing</h2>
+
+        <p>Note: You need to have python installed on your system to use ecstatic. It has been built using Python 3+,
+            and not tested on 2.x. It may work, but please don't expect support on deprecated versions.</p>
+
+        <p>Once you have installed python on your system, go ahead and clone the git repo.</p>
+
+        <pre class='codeblock'>
+        <code>
+$ git clone https://github.com/RonitRay/ecstatic.git
+        </code>
+    </pre>
+        <p>This downloads the generator as well as some boilerplate templates and sample files to get you started right
+            away.</p>
+        <p>Before you start, there are some python dependencies you must install. I recommend using a virtual
+            environment or ```pipenv``` within the ecstatic folder for containerization and to not affect your system in
+            any way.</p>
+
+        <pre class='codeblock'>
+            <code>
+$ pipenv shell        
+$ pip3 install datetime jinja2 markdown2
+        </code>
+    </pre>
+        <p>You should now be all set.</p>
+
+    </div>
+
+    <div id='folder-structure'>
+
+        <h2>Folder Structure</h2>
+        <ul>
+            <li>The <code>drafts</code> folder is for all posts you are working on but don't want to publish yet,
+                written in <code>markdown (.md)</code> format.</li>
+            <li>The <code>content</code> folder consists of all your finished blog posts or content pages. Remember to
+                move
+                your markdown file from drafts to content if you want to publish it.</li>
+            <li>The <code>templates</code> folder allows you to create templates in HTML with some python logic as per
+                the
+                Jinja
+                specification.</li>
+            <li>The <code>output</code> folder will consist of the generated site, as well as any CSS in the
+                <code>css</code> folder and images in the <code>img</code> folder that you would
+                like to have on the site.
+            </li>
+        </ul>
+    </div>
+
+    <div id='understanding-templates'>
+
+        <h2>Understanding Templates</h2>
+
+        <p>Templates are a kind of skeleton that define how any page of a particular type (eg. home, article etc) is to
+            be
+            structured.</p>
+
+        <p>Templates in Jinja exist to extend static HTML and provide scope for content to be dynamically inserted into
+            placeholder 'blocks' using Python logic. Their excellent and extensive documentation is a great resource to
+            understand and write templates for ecstatic, or build your own wrapper around Jinja.</p>
+    </div>
+
+    <p>Out of the box, ecstatic provides 3 templates for convenience:</p>
+    <div id='layout-template'>
+
+        <h3>The <code>layout</code> template</h3>
+
+        <p>The layout template is the most basic wrapper for every page you generate. It consists of the boilerplate
+            html head, title, meta, and body tags, and defines 2 blocks: customtitle and content, that are pretty
+            self-descriptive.</p>
+        <div class='codeblock'>
+            <pre>
+            <code>
+&#x3C;!DOCTYPE html&#x3E;
+
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
+    &#x3C;meta http-equiv=&#x22;X-UA-Compatible&#x22; content=&#x22;ie=edge&#x22;&#x3E;
+    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;/css/basic.css&#x22;&#x3E;
+    &#x3C;title&#x3E;{% block customtitle %} {%endblock%} | Ronit Ray&#x3C;/title&#x3E;
+    
+&#x3C;/head&#x3E;
+&#x3C;body class=&#x22;container&#x22;&#x3E;
+    
+    {% block content %} {% endblock %}
+
+    &#x3C;br&#x3E;
+
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+
+
+            </code>
+        </pre>
+        </div>
+
+        <p>Whenever you define a new template, you can extend this layout template and not have to write this
+            boilerplate again.</p>
+        <div class='codeblock'>
+            <pre>
+<code>{% extends "layout.html" %}</code>
+            </pre>
+        </div>
+    </div>
+
+    <div id='home-template'>
+        <h3>The <code>home</code> template</h3>
+
+        <p>The home template is used to generate your site's homepage.</p>
+        <p>You can have whatever content you want in it. At present, it includes a basic header, and a list of your blog
+            posts, implemented as follows:</p>
+        <div class='codeblock'>
+            <pre>
+                <code>
+&#x3C;p&#x3E;&#x3C;strong&#x3E;Latest posts:&#x3C;/strong&#x3E;&#x3C;/p&#x3E;
+
+{% for post in posts %}
+{% if post.blog == &#x27;yes&#x27; %}
+
+&#x3C;a href=&#x22;posts/{{ post.slug }}.html&#x22;&#x3E;{{post.title}}&#x3C;/a&#x3E;
+&#x3C;br&#x3E;&#x3C;br&#x3E;
+{% endif %}
+{% endfor %}
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div id='post-template'>
+        <h3>The <code>post</code> template</h3>
+
+        <p>The post template defines how the html page for every blog post will be formatted. It is pretty basic, you just include {{post.content}} somewhere in the body to load the generated HTML for your markdown post.</p>
+    </div>
+
+    <br>
+    <a href="https://ronitray.neocities.org">back to Home</a>
+    <br>
+    <br>
+    <div id="footer">
+        &copy; Copyright 2020, Ronit Ray.
+    </div>
+
+
+
+    <br>
+
+</body>
+
+</html>
