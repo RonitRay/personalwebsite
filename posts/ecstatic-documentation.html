@@ -51,6 +51,15 @@
                 <a href='#generate'>Generate the Site</a>
             </li>
             <li>
+                <a href='#extending-ecstatic'>Extending Ecstatic</a>
+                <br>
+                <ol>
+                    <li><a href='#tags'>Tags</a></li>
+                    <li><a href='#reading-time'>Reading Time</a></li>
+                    <li><a href='#rss-feed'>RSS Feed</a></li>
+                </ol>
+            </li>
+            <li>
                 <a href='#next-steps'>Next Steps</a>
             </li>
         </ol>
@@ -83,7 +92,7 @@ $ git clone https://github.com/RonitRay/ecstatic.git
         <p>Before you start, there are some python dependencies you must install. I recommend using a virtual
             environment or ```pipenv``` within the ecstatic folder for containerization and to not affect your system in
             any way.</p>
-
+        A straight sub was used for Mee, so he's eligible to play next game if he's fine!!
         <pre class='codeblock'>
             <code>
 $ pipenv shell        
@@ -162,7 +171,6 @@ $ pip3 install datetime jinja2 markdown2
             </code>
         </pre>
         </div>
-
         <p>Whenever you define a new template, you can extend this layout template and not have to write this
             boilerplate again.</p>
         <div class='codeblock'>
@@ -198,7 +206,8 @@ $ pip3 install datetime jinja2 markdown2
     <div id='post-template'>
         <h3>The <code>post</code> template</h3>
 
-        <p>The post template defines how the html page for every blog post will be formatted. It is pretty basic, you just include {{post.content}} somewhere in the body to load the generated HTML for your markdown post.</p>
+        <p>The post template defines how the html page for every blog post will be formatted. It is pretty basic, you
+            just include {{post.content}} somewhere in the body to load the generated HTML for your markdown post.</p>
     </div>
 
     <br>
@@ -209,7 +218,43 @@ $ pip3 install datetime jinja2 markdown2
         &copy; Copyright 2020, Ronit Ray.
     </div>
 
+    <div id='new-post'>
+        <h3>New Post</h3>
 
+        <p>To create a new post, execute:</p>
+
+        <pre>
+            <code>
+$ python3 new-post.py
+            </code>
+        </pre>
+
+        <p>You are asked to provide a title for the post, a list of comma-separated tags (optional), a post summary
+            (optional), and a slug (the slug is used to determine the name of the markdown file as well as the URL for
+            the post.)</p>
+        <p>You are also asked if the post is a blog post or not (optional), since you can use this flag to separate your
+            blog posts from other static content on your site.</p>
+        <p>Generated markdown file is placed in the <code>drafts</code> folder.</p>
+        <p>Posts are written in Markdown. Refer to a Markdown style guide and the Python markdown2 library documentation
+            for more. Once you are satisfied with your post, move it from the drafts folder to the <code>content</code>
+            folder.</p>
+
+    </div>
+
+    <div id='generate'>
+        <h3>Generate Your Site</h3>
+
+        <p>To generate the static site, execute:</p>
+
+        <pre>
+            <code>
+$ python3 generate.py
+            </code>
+        </pre>
+
+        <p>No prompts are provided for the generation process. It should be near instant for a reasonable number of posts. Upon completion of execution, all site-related pages and content is available in the <code>output</code> folder. You may push this entire folder to a server of your choice, or use GitHub Pages, GitLab Pages, Cloudflare Pages, Netlify, or Neocities for hosting if you would like. </p>
+
+    </div>
 
     <br>
 
