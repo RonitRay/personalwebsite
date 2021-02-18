@@ -210,13 +210,6 @@ $ pip3 install datetime jinja2 markdown2
             just include {{post.content}} somewhere in the body to load the generated HTML for your markdown post.</p>
     </div>
 
-    <br>
-    <a href="https://ronitray.neocities.org">back to Home</a>
-    <br>
-    <br>
-    <div id="footer">
-        &copy; Copyright 2020, Ronit Ray.
-    </div>
 
     <div id='new-post'>
         <h3>New Post</h3>
@@ -278,7 +271,9 @@ $ python3 generate.py
                 your posts. If you would like to include tag-based categorization on your blog, add the following code
                 to
                 your generate.py script.</p>
-            <pre>
+
+            <div class='codeblock'>
+                <pre>
             <code>
 # extract unique list of tags and sort
 tags = []
@@ -298,17 +293,19 @@ for tag in tags:
         file.write(tag_html)
             </code>
         </pre>
-
+            </div>
             <p>This patch is already applied to ecstatic. A set of links to these generated tab pages is present on the
                 home template:
             </p>
-            <pre>
+            <div class='codeblock'>
+                <pre>
             <code>
 {% for tag in tags %}
 &#x3C;a href=posts/tag-{{tag}}.html&#x3E;[{{tag}}]&#x3C;/a&#x3E;&#x26;nbsp;&#x26;nbsp;&#x26;nbsp;
 {% endfor %}                
             </code>
         </pre>
+            </div>
             <p>If you do not want tags, you can get rid of that section of the template.</p>
         </div>
 
@@ -319,7 +316,8 @@ for tag in tags:
                 to remove (relevant sections are commented in the code) and even easier to ignore (just remove any
                 mention of reading time from your post template).</p>
             <p>Note: This assumes an average reading time of 200 words per minute.</p>
-            <pre>
+            <div class='codeblock'>
+                <pre>
                 <code>
 post_clean = POSTS[post]
 for char in &#x27;-.,\n&#x27;:
@@ -336,13 +334,19 @@ post_data = {
 }              
                 </code>
             </pre>
+            </div>
         </div>
 
         <div id='rss-feed'>
             <h4>RSS Feed</h4>
-            <p>RSS Feeds are XML documents that allow users to follow content posted to your site without having to visit the site itself. Users following your site via RSS feed expect to be notified in their feed reader when your site changes, which means every time you generate your site, the rss feed must also be regenerated to include any new content.</p>
-            <p>This patch is not applied to ecstatic by default, but you can add it to the generate.py script as below:</p>
-            <pre>
+            <p>RSS Feeds are XML documents that allow users to follow content posted to your site without having to
+                visit the site itself. Users following your site via RSS feed expect to be notified in their feed reader
+                when your site changes, which means every time you generate your site, the rss feed must also be
+                regenerated to include any new content.</p>
+            <p>This patch is not applied to ecstatic by default, but you can add it to the generate.py script as below:
+            </p>
+            <div class='codeblock'>
+                <pre>
                 <code>
 # for generating an RSS feed
 filecontent = &#x27;&#x3C;?xml version=&#x22;1.0&#x22; encoding=&#x22;utf-8&#x22;?&#x3E;\n&#x3C;rss xmlns:content=&#x22;http://purl.org/rss/1.0/modules/content/&#x22; version=&#x22;2.0&#x22;&#x3E;\n&#x3C;channel&#x3E;&#x27;
@@ -372,11 +376,22 @@ with open(&#x27;output/feed.xml&#x27;, &#x27;w&#x27;) as file:
 # end
                 </code>
             </pre>
-            <p>Remember to replace <code>https://url.site</code> with your own domain. You may then link to url.site/feed.xml anywhere on your site to point to the RSS feed generated this way.</p>
+            </div>
+            <p>Remember to replace <code>https://url.site</code> with your own domain. You may then link to
+                url.site/feed.xml anywhere on your site to point to the RSS feed generated this way.</p>
         </div>
     </div>
 
     <br>
+
+    <br>
+    <a href="https://ronitray.neocities.org">back to Home</a>
+    <br>
+    <br>
+    <div id="footer">
+        &copy; Copyright 2020, Ronit Ray.
+    </div>
+
 
 </body>
 
