@@ -18,7 +18,7 @@
 
 
     <div id='post-top'>
-        <h1>Ecstatic v1.0 Documentation</h1>
+        <h1>Ecstatic v0.1 Documentation</h1>
         <h3><a href="https://ronitray.neocities.org">Ronit Ray</a></h3>
 
     </div>
@@ -252,8 +252,94 @@ $ python3 generate.py
             </code>
         </pre>
 
-        <p>No prompts are provided for the generation process. It should be near instant for a reasonable number of posts. Upon completion of execution, all site-related pages and content is available in the <code>output</code> folder. You may push this entire folder to a server of your choice, or use GitHub Pages, GitLab Pages, Cloudflare Pages, Netlify, or Neocities for hosting if you would like. </p>
+        <p>No prompts are provided for the generation process. It should be near instant for a reasonable number of
+            posts. Upon completion of execution, all site-related pages and content is available in the
+            <code>output</code> folder. You may push this entire folder to a server of your choice, or use GitHub Pages,
+            GitLab Pages, Cloudflare Pages, Netlify, or Neocities for hosting if you would like.
+        </p>
 
+    </div>
+
+    <div id='extending-ecstatic'>
+        <h3>Extending Ecstatic</h3>
+
+        <p>With templates, your static site can be extended into a pretty functional site in no time without having to
+            alter the generating program in any way. That said, if you want more functionality than just a basic blog
+            and landing pages, you can bake it into the <code>generate.py</code> script. It is a standard python script
+            and can be extended for any purpose you deem fit.</p>
+        <p>Here are some helpful extensions you might want to use. Eventual releases may include patches as separate
+            files that you can install much like patches in dwm, but that is not implemented at present.</p>
+        <div id='tags'>
+            <h4>Tags</h4>
+            <p>Tags allow you to categorize your posts and are a pretty common feature on blogs all over the web.
+                Ecstatic
+                already asks you to provide an (albeit optional) comma-separated list of tags that you think are
+                relevant to
+                your posts. If you would like to include tag-based categorization on your blog, add the following code
+                to
+                your generate.py script.</p>
+            <pre>
+            <code>
+# extract unique list of tags and sort
+tags = []
+for post in posts_metadata:
+    if post['blog'] == 'yes':
+        tags.extend(post['tags'].split(', '))
+tags = list(set(tags))
+tags.sort()
+
+# make a list of posts for each tag, then create a new page dedicated to all posts for that tag
+tag_template = env.get_template('tag.html')
+for tag in tags:
+    tagposts_metadata = [
+        POSTS[post].metadata for post in POSTS if tag in POSTS[post].metadata['tags'].split(', ')]
+    tag_html = tag_template.render(tagposts=tagposts_metadata, tag=tag)
+    with open('output/posts/tag-'+tag+'.html', 'w') as file:
+        file.write(tag_html)
+            </code>
+        </pre>
+
+            <p>This patch is already applied to ecstatic. A set of links to these generated tab pages is present on the home template:
+            </p>
+            <pre>
+            <code>
+{% for tag in tags %}
+<a href=posts/tag-{{tag}}.html>[{{tag}}]</a>&nbsp;&nbsp;&nbsp;
+{% endfor %}                
+            </code>
+        </pre>
+        <p>If you do not want tags, you can get rid of that section of the template.</p>
+        </div>
+
+        <div id='reading-time'>
+            <h4>Reading Time</h4>
+            <p>A reading time indicator appears typically near the top of a post, indicating the average time it might
+                take a reader to go through the post. This patch is already applied to the generator, but it is trivial
+                to remove (relevant sections are commented in the code) and even easier to ignore (just remove any
+                mention of reading time from your post template).</p>
+            <p>Note: This assumes an average reading time of 200 words per minute.</p>
+            <pre>
+                <code>
+post_clean = POSTS[post]
+for char in '-.,\n':
+    post_clean = post_clean.replace(char, ' ')
+post_clean = post_clean.lower()
+
+post_words = post_clean.split()
+
+post_data = {
+.
+.
+.
+'readtime': round(len(post_words)/200)
+}              
+                </code>
+            </pre>
+        </div>
+
+        <div id='rss-feed'>
+
+        </div>
     </div>
 
     <br>
