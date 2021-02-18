@@ -283,18 +283,18 @@ $ python3 generate.py
 # extract unique list of tags and sort
 tags = []
 for post in posts_metadata:
-    if post['blog'] == 'yes':
-        tags.extend(post['tags'].split(', '))
+    if post[&#x27;blog&#x27;] == &#x27;yes&#x27;:
+        tags.extend(post[&#x27;tags&#x27;].split(&#x27;, &#x27;))
 tags = list(set(tags))
 tags.sort()
 
 # make a list of posts for each tag, then create a new page dedicated to all posts for that tag
-tag_template = env.get_template('tag.html')
+tag_template = env.get_template(&#x27;tag.html&#x27;)
 for tag in tags:
     tagposts_metadata = [
-        POSTS[post].metadata for post in POSTS if tag in POSTS[post].metadata['tags'].split(', ')]
+        POSTS[post].metadata for post in POSTS if tag in POSTS[post].metadata[&#x27;tags&#x27;].split(&#x27;, &#x27;)]
     tag_html = tag_template.render(tagposts=tagposts_metadata, tag=tag)
-    with open('output/posts/tag-'+tag+'.html', 'w') as file:
+    with open(&#x27;output/posts/tag-&#x27;+tag+&#x27;.html&#x27;, &#x27;w&#x27;) as file:
         file.write(tag_html)
             </code>
         </pre>
@@ -304,7 +304,7 @@ for tag in tags:
             <pre>
             <code>
 {% for tag in tags %}
-<a href=posts/tag-{{tag}}.html>[{{tag}}]</a>&nbsp;&nbsp;&nbsp;
+&#x3C;a href=posts/tag-{{tag}}.html&#x3E;[{{tag}}]&#x3C;/a&#x3E;&#x26;nbsp;&#x26;nbsp;&#x26;nbsp;
 {% endfor %}                
             </code>
         </pre>
@@ -321,8 +321,8 @@ for tag in tags:
             <pre>
                 <code>
 post_clean = POSTS[post]
-for char in '-.,\n':
-    post_clean = post_clean.replace(char, ' ')
+for char in &#x27;-.,\n&#x27;:
+    post_clean = post_clean.replace(char, &#x27; &#x27;)
 post_clean = post_clean.lower()
 
 post_words = post_clean.split()
@@ -331,7 +331,7 @@ post_data = {
 .
 .
 .
-'readtime': round(len(post_words)/200)
+&#x27;readtime&#x27;: round(len(post_words)/200)
 }              
                 </code>
             </pre>
