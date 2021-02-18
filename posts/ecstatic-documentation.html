@@ -69,18 +69,18 @@
 
         <h2>What is Ecstatic?</h2>
 
-        <p>Ecstatic is a static site generator. It is a python program that makes use of, primarily, the Jinja template
-            engine to generate a complete website. It is ideal for blogs and/or personal/company sites.</p>
+        <p>Ecstatic is a static site generator. It is written in <a href='https://www.python.org/'>>Python</a> and makes use of, primarily, the <a href='https://jinja.palletsprojects.com/en/2.11.x/'>Jinja template
+            engine</a> to generate a complete website. It is ideal for blogs and/or personal/company sites.</p>
     </div>
 
     <div id='installing'>
 
         <h2>Installing</h2>
 
-        <p>Note: You need to have python installed on your system to use ecstatic. It has been built using Python 3+,
+        <p>Note: You need to have Python and git installed on your system to use ecstatic. It has been built using Python 3+,
             and not tested on 2.x. It may work, but please don't expect support on deprecated versions.</p>
 
-        <p>Once you have installed python on your system, go ahead and clone the git repo.</p>
+        <p>Once you have installed Python on your system, go ahead and clone the git repo.</p>
 
         <pre class='codeblock'>
         <code>
@@ -89,12 +89,12 @@ $ git clone https://github.com/RonitRay/ecstatic.git
     </pre>
         <p>This downloads the generator as well as some boilerplate templates and sample files to get you started right
             away.</p>
-        <p>Before you start, there are some python dependencies you must install. I recommend using a virtual
-            environment or ```pipenv``` within the ecstatic folder for containerization and to not affect your system in
+        <p>Before you start, there are some python dependencies you must install. I recommend using a <a href='https://docs.python.org/3/tutorial/venv.html'>virtual
+            environment</a> or <a href='https://pipenv.pypa.io/en/latest/'><code>pipenv</code></a> within the ecstatic folder for containerization and to not affect your system in
             any way.</p>
-        A straight sub was used for Mee, so he's eligible to play next game if he's fine!!
         <pre class='codeblock'>
             <code>
+$ pip3 install pipenv
 $ pipenv shell        
 $ pip3 install datetime jinja2 markdown2
         </code>
@@ -108,7 +108,7 @@ $ pip3 install datetime jinja2 markdown2
         <h2>Folder Structure</h2>
         <ul>
             <li>The <code>drafts</code> folder is for all posts you are working on but don't want to publish yet,
-                written in <code>markdown (.md)</code> format.</li>
+                written in <a href='https://en.wikipedia.org/wiki/Markdown'><code>markdown (.md)</code></a> format.</li>
             <li>The <code>content</code> folder consists of all your finished blog posts or content pages. Remember to
                 move
                 your markdown file from drafts to content if you want to publish it.</li>
@@ -132,7 +132,7 @@ $ pip3 install datetime jinja2 markdown2
             structured.</p>
 
         <p>Templates in Jinja exist to extend static HTML and provide scope for content to be dynamically inserted into
-            placeholder 'blocks' using Python logic. Their excellent and extensive documentation is a great resource to
+            placeholder 'blocks' using Python logic. <a href='https://jinja.palletsprojects.com/en/2.11.x/'>Their excellent and extensive documentation</a> is a great resource to
             understand and write templates for ecstatic, or build your own wrapper around Jinja.</p>
     </div>
 
@@ -207,7 +207,7 @@ $ pip3 install datetime jinja2 markdown2
         <h3>The <code>post</code> template</h3>
 
         <p>The post template defines how the html page for every blog post will be formatted. It is pretty basic, you
-            just include {{post.content}} somewhere in the body to load the generated HTML for your markdown post.</p>
+            just include <code>{{post.content}}</code> somewhere in the body to load the generated HTML for your markdown post.</p>
     </div>
 
 
@@ -228,8 +228,8 @@ $ python3 new-post.py
         <p>You are also asked if the post is a blog post or not (optional), since you can use this flag to separate your
             blog posts from other static content on your site.</p>
         <p>Generated markdown file is placed in the <code>drafts</code> folder.</p>
-        <p>Posts are written in Markdown. Refer to a Markdown style guide and the Python markdown2 library documentation
-            for more. Once you are satisfied with your post, move it from the drafts folder to the <code>content</code>
+        <p>Posts are written in Markdown. Refer to <a href='https://www.markdownguide.org/basic-syntax/'>a Markdown style guide</a> and the <a href='https://github.com/trentm/python-markdown2'>Python markdown2 library documentation</a>
+            for more. Once you are satisfied with your post, move it from the <code>drafts</code> folder to the <code>content</code>
             folder.</p>
 
     </div>
@@ -247,8 +247,8 @@ $ python3 generate.py
 
         <p>No prompts are provided for the generation process. It should be near instant for a reasonable number of
             posts. Upon completion of execution, all site-related pages and content is available in the
-            <code>output</code> folder. You may push this entire folder to a server of your choice, or use GitHub Pages,
-            GitLab Pages, Cloudflare Pages, Netlify, or Neocities for hosting if you would like.
+            <code>output</code> folder. You may push this entire folder to a server of your choice, or use <a href='https://pages.github.com/'>GitHub Pages</a>,
+            <a href='https://about.gitlab.com/stages-devops-lifecycle/pages/'>GitLab Pages</a>, <a href='https://pages.cloudflare.com/'>Cloudflare Pages</a>, <a href='https://www.netlify.com/'>Netlify</a>, or <a href='https://neocities.org'>Neocities</a> for hosting if you would like.
         </p>
 
     </div>
@@ -261,7 +261,7 @@ $ python3 generate.py
             and landing pages, you can bake it into the <code>generate.py</code> script. It is a standard python script
             and can be extended for any purpose you deem fit.</p>
         <p>Here are some helpful extensions you might want to use. Eventual releases may include patches as separate
-            files that you can install much like patches in dwm, but that is not implemented at present.</p>
+            files that you can install much <a href='https://suckless.org/hacking/'>like patches in dwm</a>, but that is not implemented at present.</p>
         <div id='tags'>
             <h4>Tags</h4>
             <p>Tags allow you to categorize your posts and are a pretty common feature on blogs all over the web.
@@ -380,6 +380,10 @@ with open(&#x27;output/feed.xml&#x27;, &#x27;w&#x27;) as file:
             <p>Remember to replace <code>https://url.site</code> with your own domain. You may then link to
                 url.site/feed.xml anywhere on your site to point to the RSS feed generated this way.</p>
         </div>
+    </div>
+    <div id='next-steps'>
+        <h3>Next Steps</h3>
+        <p>If you find any bugs or have feature requests, feel free to raise an issue at this project's GitHub page. Not all feature requests will be implemented for the sake of simplicity but some may be provided as patches in the future.</p>
     </div>
 
     <br>
