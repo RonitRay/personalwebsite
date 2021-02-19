@@ -1,4 +1,4 @@
-# Repo to store the sources for [my personal website](https://ronitray.neocities.org/)
+# Repo to store the sources for [my personal website](https://ronitray.xyz/)
 
 Site is generated using [ecstatic, my tiny minimal static site generator](https://github.com/RonitRay/ecstatic)
 
