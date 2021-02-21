@@ -38,12 +38,13 @@ a {
     font-weight: bold;
     /*color: #d8dee9;*/
     /*color: #00ccff;*/
-    color: #116611;
+    /*color: #116611;*/
+    color: #004d40;
 }
 
 a:hover{
     color: white;
-    background-color: #161 /*#00ccff*/;
+    background-color:#004d40 /*#00ccff*/;
     text-decoration: none;
 }
 
