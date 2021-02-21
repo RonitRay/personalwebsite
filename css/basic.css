@@ -39,12 +39,12 @@ a {
     /*color: #d8dee9;*/
     /*color: #00ccff;*/
     /*color: #116611;*/
-    color: #4db6ac;
+    color: #009688;
 }
 
 a:hover{
     color: white;
-    background-color:#4db6ac /*#00ccff*/;
+    background-color:#009688 /*#00ccff*/;
     text-decoration: none;
 }
 
