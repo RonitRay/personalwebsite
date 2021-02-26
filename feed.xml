@@ -8,7 +8,7 @@
 <title>How I Handle My Passwords</title>
 <link>https://ronitray.xyz/posts/passwords-private.html</link>
 <pubDate>Sun, 21 Feb 2021</pubDate>
-<description></description>
+<description>My only-slightly eccentric and perhaps unnecessary password workflow.</description>
 <content:encoded><![CDATA[<p>This post comes in soon after <a href="https://blog.lastpass.com/2021/02/changes-to-lastpass-free/">LastPass announced</a> that they are restructuring their free tier to only allow access from one category of devices, i.e. only desktops or only mobile devices. I assume this will be a no-go for many users, and given the high (~$36/year) subscription costs, several people will be unwilling to upgrade to their premium offering.</p>
 
 <p>If you're not using a password manager, you're just asking for trouble, and/or putting in a lot of unnecessary effort memorizing several passwords when you could just remember one. My recommendation to anyone who is starting out or looking to switch from LastPass and wants a very similar experience is the excellent <a href="https://bitwarden.com/">Bitwarden</a>, a free and open source offering that offers most of the features you would need in their free tier and also a few premium options at roughly $10 a year. It is far from the only option though, there are several very good recommendations a simple web search will get you.</p>
