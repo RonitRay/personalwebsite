@@ -21,9 +21,21 @@ Contact Me
         
 </div>
 <p>
-        <p>Please feel free to reach out to me over email at ray[DOT]ronit[AT]gmail[DOT]com.</p>
+        <p>If you would like to contact me, please fill in the form below. I'm also available (although not very active) over <a href="https://in.linkedin.com/in/ronit-ray">LinkedIn</a> and <a href="https://mastodon.lol/@ron">Mastodon</a>.</p>
 
-<p>I'm also available (although not very active) over <a href="https://in.linkedin.com/in/ronit-ray">LinkedIn</a> and <a href="https://mastodon.lol/@ron">Mastodon</a>.</p>
+<form name="contact" method="POST" netlify>
+  <p>
+    <label>Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Email: <input type="email" name="email" /></label>
+  </p>  
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 
 </p>
 
@@ -36,7 +48,7 @@ Contact Me
 <div id="footer">
 &copy; Copyright 2020, Ronit Ray.
 
-This blog is also available as <a href="https://ronitray.xyz/feed.xml">an RSS feed.</a>
+You can subscribe to my blog via <a href="https://ronitray.xyz/feed.xml">an RSS feed.</a>
 </div>
 
 
