@@ -3,12 +3,19 @@
           padding-left: 2%;
           padding-right: 2%;
   }
+
+  input {
+      width:100%;
+  }
 }
 
 @media only screen and (orientation: landscape) {
   body {
           padding-left: 15%;
           padding-right: 15%;
+  }
+  input {
+      width:50%;
   }
 }
 
