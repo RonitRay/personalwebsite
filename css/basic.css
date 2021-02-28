@@ -21,12 +21,9 @@
 
 body {
     font-family: sans-serif;
-    /*font-size: 125%;*/
     background-color: white;
     color: black;
-    line-height: 1.5em/*150%*/;
-    /*background-color: #2e3440;
-    color: #d8dee9;*/
+    line-height: 1.5em;
 }
 
 .codeblock{
@@ -34,25 +31,18 @@ body {
 }
 
 #home-header{
-    /*text-align: center;*/
 }
 
 #post-top {
-    /*text-align: center;*/
 }
 
 a {
-    /*font-weight: bold;*/
-    /*color: #d8dee9;*/
-    /*color: #00ccff;*/
-    /*color: #116611;*/
-    /*color: #009688;*/
-    color: black;
+   color: black;
 }
 
 a:hover{
     color: white;
-    background-color: black; /*#009688*/ /*#00ccff*/;
+    background-color: black; 
     text-decoration: none;
 }
 
@@ -68,13 +58,11 @@ td{
 .booktable{
     width:100%;
     border-collapse: collapse;
-    /*border:1px solid black;*/
     table-layout: fixed;    
 }
 
 .booktable>th, td{
     border-collapse: collapse;
-    /*border:1px solid black;*/
     padding-right: 5%;
 }
 
