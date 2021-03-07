@@ -1,7 +1,3 @@
-@font-face {
-        font-family: "Gidole"; src:url('GidoleFont/Gidole-Regular.ttf');
-}
-
 @media only screen and (orientation: portrait) {        
   body {
           padding-left: 2%;
@@ -24,7 +20,7 @@
 }
 
 body {
-    font-family: "Gidole", serif;
+    font-family: Helvetica, Arial, Verdana, Tahoma, serif;
     background-color: white;
     color: black;
     line-height: 1.5em;
