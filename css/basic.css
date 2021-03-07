@@ -23,13 +23,23 @@
     body{
         background-color: white;
         color: black;
+        
+        a{
+            color: #3285C2;
+            border-bottom: 1px solid #3285C2;
+        }
     }
 }
 
 @media (prefers-color-scheme: dark){
     body{
         background-color: #212121;
-        color: #F5F5F5;
+        color: #E0E0E0;
+        
+        a{
+            color: #4bbaff;
+            border-bottom: 1px solid #4bbaff;
+        }
     }
 }
 
@@ -50,8 +60,6 @@ body {
 a {
    text-decoration: none;
    font-weight: bold;
-   color: #3285C2;
-   border-bottom: 1px solid #3285C2;
 }
 
 footer {
