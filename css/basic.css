@@ -20,13 +20,17 @@
 }
 
 @media (prefers-color-scheme: light){
-    background-color: white;
-    color: black;
+    body{
+        background-color: white;
+        color: black;
+    }
 }
 
 @media (prefers-color-scheme: dark){
-    background-color: #212121;
-    color: #F5F5F5;
+    body{
+        background-color: #212121;
+        color: #F5F5F5;
+    }
 }
 
 body {
