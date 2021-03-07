@@ -19,20 +19,25 @@
   }
 }
 
-body {
-    font-family: Ubuntu, Roboto, Noto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
-    text-rendering:optimizeLegibility;
+@media (prefers-color-scheme: light){
     background-color: white;
     color: black;
+}
+
+@media (prefers-color-scheme: dark){
+    background-color: #212121;
+    color: #F5F5F5;
+}
+
+body {
+    font-family: Ubuntu, Roboto, Noto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+    text-rendering:optimizeLegibility;    
     line-height: 1.5;
     font-size: 1.25em;
 }
 
 .codeblock{
         overflow-x:auto;
-}
-
-header{
 }
 
 #post-top {
@@ -69,4 +74,3 @@ img{
     max-width: 100%;
     height: auto;
 }
-
