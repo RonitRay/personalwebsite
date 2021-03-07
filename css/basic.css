@@ -1,9 +1,11 @@
 @font-face {
-        font-family: "Roboto Slab"; src:url('roboto-slab/RobotoSlab-Regular.ttf');
+        /*font-family: "Roboto Slab"; src:url('roboto-slab/RobotoSlab-Regular.ttf');*/
+        font-family: "Urbanist"; src:url('Urbanist.Font.Family/Urbanist-Regular.ttf');
 }
 
 @font-face {
-        font-family: "Roboto Slab"; font-weight: bold; src:url('roboto-slab/RobotoSlab-Bold.ttf');
+        font-family: "Roboto Slab"; font-weight: bold; src:url('Urbanist.Font.Family/Urbanist-Bold.ttf');
+/*        font-family: "Roboto Slab"; font-weight: bold; src:url('roboto-slab/RobotoSlab-Bold.ttf');*/
 }
 
 @media only screen and (orientation: portrait) {        
@@ -28,7 +30,7 @@
 }
 
 body {
-    font-family: "Roboto Slab", serif;
+    font-family: "Urbanist", serif;
     background-color: white;
     color: black;
     line-height: 1.5em;
