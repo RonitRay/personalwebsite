@@ -20,7 +20,8 @@
 }
 
 body {
-    font-family: Helvetica, Arial, Verdana, Tahoma, serif;
+    font-family: Ubuntu, Roboto, Noto, Helvetica, Arial, Verdana, Tahoma, serif;
+    text-rendering:optimizeLegibility;
     background-color: white;
     color: black;
     line-height: 1.5em;
