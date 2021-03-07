@@ -11,8 +11,8 @@
 
 @media only screen and (orientation: landscape) {
   body {
-          padding-left: 15%;
-          padding-right: 15%;
+          padding-left: 25%;
+          padding-right: 25%;
   }
   input {
       width:50%;
@@ -24,7 +24,7 @@ body {
     text-rendering:optimizeLegibility;
     background-color: white;
     color: black;
-    line-height: 1.5em;
+    line-height: 1.5;
     font-size: 1.25em;
 }
 
