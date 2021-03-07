@@ -1,9 +1,9 @@
 @font-face {
-        font-family: Aleo; src:url('aleo/Aleo-Regular.otf');
+        font-family: "Roboto Slab"; src:url('roboto-slab/RobotoSlab-Regular.ttf');
 }
 
 @font-face {
-        font-family: Aleo; font-weight: bold; src:url('aleo/Aleo-Bold.otf');
+        font-family: "Roboto Slab"; font-weight: bold; src:url('roboto-slab/RobotoSlab-Bold.ttf');
 }
 
 @media only screen and (orientation: portrait) {        
@@ -28,7 +28,7 @@
 }
 
 body {
-    font-family: "Aleo", serif;
+    font-family: "Roboto Slab", serif;
     background-color: white;
     color: black;
     line-height: 1.5em;
