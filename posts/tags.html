@@ -17,25 +17,26 @@ Tags are a thing now, I guess
 </head>
 
 <body class="container">
-
-    
-
-<div id='home-header'>
+    <header>
         <h1><a href='https://ronitray.xyz'>Ronit Ray</a></h1>
-        <a href="about.html"> About </a>&bull;
-        <a href="../blog.html"> Blog </a>&bull;
-        <a href='projects.html'> Projects </a>&bull;
-        <a href="../library.html"> Library </a>&bull;
-        <a href="contact.html"> Contact</a>
-        <hr>
-</div>
-
-<div id='post-top'>
+        <nav>
+        <a href="https://ronitray.xyz/posts/about.html"> About </a>&bull;
+        <a href="https://ronitray.xyz/blog.html"> Blog </a>&bull;
+        <a href='https://ronitray.xyz/posts/projects.html'> Projects </a>&bull;
+        <a href="https://ronitray.xyz/library.html"> Library </a>&bull;
+        <a href="https://ronitray.xyz/posts/contact.html"> Contact</a>
+        </nav>
+    </header>
+    <hr>
+    
+    
+<section id='post-top'>
         <h1>Tags are a thing now, I guess</h1>
         
         <h3>2020-11-05 &bull; 3-minute read</h3>
         
-</div>
+</section>
+<article>
 <p>
         <p>In case you don't know, I've been writing <a href="https://github.com/RonitRay/ecstatic">my own static site generator in Python</a> to generate this site. The initial codebase was borrowed with thanks from <a href="https://blog.naveeraashraf.com/posts/make-static-site-generator-with-python/">Naveera Ashraf's very helpful blog post</a>. I have since put in some of my own code to implement the following:</p>
 
@@ -91,7 +92,8 @@ for tag in tags:
 <p>Since all of the generation is done on my development/writing machine, only the static output is published to the site and it loads as fast as any static HTML for the user, no unnecessary CPU hogging needed. I'm almost positive this code is suboptimal because it's literally a quick and dirty way to get what I wanted. I'll either get around to making it better later, or, well, the kids will have something a little more substantial than incorrect grammar corrections to do next Hacktoberfest.</p>
 
 </p>
-
+</article>
+<section id='post-other'>
 <br>
 <a href="https://ronitray.xyz">back to Home</a>
 <br>
@@ -112,17 +114,16 @@ Have a look at some posts I enjoyed reading this week:<br>
         
 </ul>
 
-<hr>
-<div id="footer">
-        &copy; Copyright 2020, Ronit Ray.
 
-        You can subscribe to my blog via <a href="https://ronitray.xyz/feed.xml">an RSS feed.</a>
-</div>
-
-
-
+    
     <br>
-
+    <hr>
+    <footer>
+        &copy; Copyright 2020, Ronit Ray.
+    
+        You can subscribe to my blog via <a href="https://ronitray.xyz/feed.xml">an RSS feed.</a>
+    </footer>
+    <br>    
 </body>
 
 </html>

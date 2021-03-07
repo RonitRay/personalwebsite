@@ -48,7 +48,7 @@
 
 <ol>
 <li><a href="https://github.com/RonitRay/ecstatic/">Source on GitHub</a></li>
-<li><a href="https://ronitray.neocities.org/posts/ecstatic-documentation.html">Documentation</a></li>
+<li><a href="https://ronitray.xyz/posts/ecstatic-documentation.html">Documentation</a></li>
 </ol>
 
 <p><em>Please note that this is a point release and is still very much a minimal and raw project. I definitely recommend getting your hands dirty with it, but you should think twice before deploying it in a production environment where things move quickly and break fast.</em></p>
