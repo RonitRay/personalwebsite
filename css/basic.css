@@ -1,4 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@font-face {
+        font-family: Enriqueta; src:url('css/Enriqueta-Regular.otf');
+}
+
+@font-face {
+        font-family: Enriqueta; font-weight: bold; src:url('css/Enriqueta-Bold.otf');
+}
 
 @media only screen and (orientation: portrait) {        
   body {
@@ -22,7 +29,7 @@
 }
 
 body {
-    font-family: "Roboto Slab", serif;
+    font-family: "Enriqueta", serif;
     background-color: white;
     color: black;
     line-height: 1.5em;
