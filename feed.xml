@@ -69,7 +69,7 @@
 
 <p>This is important not only for screen readers but also for people in poorly connected areas who are unable to load anything beyond the text content. It also helps years down the line if you are linking to external images that may not be there. The link may break but your alt text is there to stay.</p>
 
-<h3 id='nocss'>CSS and Mouse Independence and Terminal Based Browsers:</h3>
+<h3 id='nocss'>CSS and Mouse Independence and Terminal Based Browsers</h3>
 
 <p>The site looks fine without loading the CSS file. I don't rely on any fancy CSS shenanigans, mostly because I don't know or need them. I'm a big fan of terminal-based browsers, and have checked the site with links, lynx, and w3m. Looks pretty good, if I may say so. I don't hijack clicks or scrolling so users are free to navigate using their keyboard.</p>
 
