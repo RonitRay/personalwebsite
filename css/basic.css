@@ -1,11 +1,5 @@
 @font-face {
-        /*font-family: "Roboto Slab"; src:url('roboto-slab/RobotoSlab-Regular.ttf');*/
-        font-family: "Urbanist"; src:url('Urbanist.Font.Family/Urbanist-Regular.ttf');
-}
-
-@font-face {
-        font-family: "Roboto Slab"; font-weight: bold; src:url('Urbanist.Font.Family/Urbanist-Bold.ttf');
-/*        font-family: "Roboto Slab"; font-weight: bold; src:url('roboto-slab/RobotoSlab-Bold.ttf');*/
+        font-family: "Gidole"; src:url('GidoleFont/Gidole-Regular.ttf');
 }
 
 @media only screen and (orientation: portrait) {        
