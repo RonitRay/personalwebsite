@@ -1,65 +1,67 @@
-@media only screen and (orientation: portrait) {        
-  body {
-          padding-left: 2%;
-          padding-right: 2%;
-  }
+@media only screen and (orientation: portrait) {
+    body {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 
-  input {
-      width:90%;
-  }
+    input {
+        width: 90%;
+    }
 }
 
 @media only screen and (orientation: landscape) {
-  body {
-          padding-left: 25%;
-          padding-right: 25%;
-  }
-  input {
-      width:50%;
-  }
+    body {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    input {
+        width: 50%;
+    }
 }
 
-@media (prefers-color-scheme: light){
-    body{
+@media (prefers-color-scheme: light) {
+    body {
         background-color: white;
         color: black;
-        
-        a{
-            color: #3285C2;
-            border-bottom: 1px solid #3285C2;
-        }
     }
+
+    a {
+        color: #3285C2;
+        border-bottom: 1px solid #3285C2;
+    }
+
 }
 
-@media (prefers-color-scheme: dark){
-    body{
+@media (prefers-color-scheme: dark) {
+    body {
         background-color: #212121;
         color: #E0E0E0;
-        
-        a{
-            color: #4bbaff;
-            border-bottom: 1px solid #4bbaff;
-        }
     }
+
+    a {
+        color: #4bbaff;
+        border-bottom: 1px solid #4bbaff;
+    }
+
 }
 
 body {
     font-family: Ubuntu, Roboto, Noto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
-    text-rendering:optimizeLegibility;    
+    text-rendering: optimizeLegibility;
     line-height: 1.5;
     font-size: 1.25em;
 }
 
-.codeblock{
-        overflow-x:auto;
+.codeblock {
+    overflow-x: auto;
 }
 
-#post-top {
-}
+#post-top {}
 
 a {
-   text-decoration: none;
-   font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer {
@@ -67,22 +69,23 @@ footer {
     text-align: center;
 }
 
-td{
+td {
     padding: 5px;
 }
 
-.booktable{
-    width:100%;
+.booktable {
+    width: 100%;
     border-collapse: collapse;
-    table-layout: fixed;    
+    table-layout: fixed;
 }
 
-.booktable>th, td{
+.booktable>th,
+td {
     border-collapse: collapse;
     padding-right: 5%;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
