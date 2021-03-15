@@ -1,9 +1,9 @@
 @media only screen and (orientation:portrait) {
     body{
-        padding: 0%;
+        padding: 2%;
     }
     .container {
-        padding: 2%;
+        padding: 0%;
     }
 }
 
