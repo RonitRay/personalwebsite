@@ -1,14 +1,25 @@
 @media only screen and (orientation:portrait) {
-    .container {
+    body{
         padding-left: 2%;
-        padding-right: 2%
+        padding-right: 2%;
+    }
+    .container {
+        padding-left: 1%;
+        padding-right: 1%
     }
 }
 
 @media only screen and (orientation:landscape) {
-    .container {
+    body{
         padding-left: 25%;
         padding-right: 25%
+    }
+
+    .container {
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 0%;
+        padding-bottom: 0%;
     }
 }
 
