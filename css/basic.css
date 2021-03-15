@@ -1,9 +1,9 @@
 @media only screen and (orientation:portrait) {
     body{
-        padding: 2%;
+        padding: 0%;
     }
     .container {
-        padding: 1%;
+        padding: 2%;
     }
 }
 
@@ -42,8 +42,12 @@
 
 @media (prefers-color-scheme:dark) {
     body {
+        background-color: #424242;
+    }
+
+    .container {
         background-color: #212121;
-        color: #e0e0e0
+        color: #e0e0e0;
     }
 
     a {
