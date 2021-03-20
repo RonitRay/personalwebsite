@@ -20,8 +20,10 @@
     }
 
     a {
-        color: #0d47a1;
-        border-bottom: 1px solid #0d47a1;
+        color: blue;
+        border-bottom: 1px solid blue;
+        /*color: #0d47a1;
+        border-bottom: 1px solid #0d47a1;*/
     }
 }
 
