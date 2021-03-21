@@ -44,10 +44,6 @@ body {
     font-size: 18px;
 }
 
-header>p {
-    text-decoration: bold;
-}
-
 .codeblock {
     overflow-x: auto
 }
