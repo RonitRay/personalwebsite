@@ -41,7 +41,7 @@ body {
     font-family: sans-serif;
     text-rendering: optimizeLegibility;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .codeblock {
