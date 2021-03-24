@@ -6,8 +6,10 @@
 
 @media only screen and (orientation:landscape) {
     body{
-        padding-left: 22%;
-        padding-right: 22%;
+        /*padding-left: 22%;
+        padding-right: 22%;*/
+        margin: auto;
+        width: 50%;
         padding-top: 0%;
         padding-bottom: 0;
     }
