@@ -84,7 +84,7 @@
 
 <h3 id='readability'>General Readability</h3> 
 
-<p>On desktop, I've kept a 25% padding on left and right, which translates to roughly 70-85 characters per line depending on the size of your monitor. This padding goes down to about 2% on phone, which means it doesn't overflow for phones with silly curved displays and also leaves room for swipe based gestures. I'm using 18pt font size; I think it is fairly large for those who need it without being too huge for those who don't. The site is fully zoom-compatible, so text sizes can be changed without hassle using your browser's zoom functionality. I've opted for a line height (spacing) of 1.5 as well. I don't (and won't) use all caps or justified alignment.</p>
+<p>On desktop, the content is centered and will cover 50% of the screen width,which translates to roughly 70-85 characters per line depending on the size of your monitor. This goes up to 90% on portrait displays (like phones) to minimize wastage of limited vertical real estate. There is just enough of a margin to ensure content doesn't overflow for phones with silly curved displays and leave room for swipe based gestures. I'm using 1.125em font size (translates to 18pt on <em>most</em> browsers by default); I think it is fairly large for those who need it without being too huge for those who don't. The site is fully zoom-compatible, so text sizes can be changed without hassle using your browser's zoom functionality. I've opted for a line height (spacing) of 1.5 as well. I don't (and won't) use all caps or justified alignment.</p>
 
 <h3 id='font'>Font</h3>
 
