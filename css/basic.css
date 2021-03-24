@@ -1,17 +1,12 @@
 @media only screen and (orientation:portrait) {
     body{
-        padding: 2%;
+        width: 96%;
     }
 }
 
 @media only screen and (orientation:landscape) {
     body{
-        /*padding-left: 22%;
-        padding-right: 22%;*/
-        margin: auto;
         width: 50%;
-        padding-top: 0%;
-        padding-bottom: 0;
     }
 }
 
@@ -44,6 +39,7 @@ body {
     text-rendering: optimizeLegibility;
     line-height: 1.5;
     font-size: 1.125em;
+    margin: auto;
 }
 
 .codeblock {
