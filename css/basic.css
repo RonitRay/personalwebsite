@@ -79,9 +79,11 @@ img {
 }
 
 #left-nav{
+    display: inline-block;
     text-align: left;
 }
 
 #right-nav{
+    display: inline-block;
     text-align: right;
 }
