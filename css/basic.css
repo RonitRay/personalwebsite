@@ -79,9 +79,9 @@ img {
 }
 
 #left-nav{
-    float:left;
+    float:inline-start;
 }
 
 #right-nav{
-    float:right;
+    float:inline-end;
 }
