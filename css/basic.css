@@ -79,11 +79,11 @@ img {
 }
 
 #left-nav{
-    display: inline-block;
+    display: inline;
     text-align: left;
 }
 
 #right-nav{
-    display: inline-block;
+    display: inline;
     text-align: right;
 }
