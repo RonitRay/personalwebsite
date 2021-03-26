@@ -77,3 +77,11 @@ img {
     margin: auto;
     display: block;
 }
+
+#left-nav{
+    float:left;
+}
+
+#right-nav{
+    float:right;
+}
