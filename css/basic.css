@@ -79,11 +79,9 @@ img {
 }
 
 #left-nav{
-    display: inline-block;
-    text-align: left;
+    float: left;
 }
 
 #right-nav{
-    /*display: inline;*/
-    text-align: right;
+    float: right;
 }
