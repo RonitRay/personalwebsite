@@ -45,6 +45,7 @@ body {
 .codeblock {
     background-color: #dae3ff;
     border: 1px solid black;
+    padding: 2px;
     overflow-x: auto
 }
 
