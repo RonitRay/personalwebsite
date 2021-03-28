@@ -20,6 +20,11 @@
         color: #1565c0;
         border-bottom: 1px solid #1565c0;
     }
+
+    .codeblock {
+        background-color: #dae3ff;
+        border: 1px solid black;
+    }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -32,6 +37,11 @@
         color: #4bbaff;
         border-bottom: 1px solid #4bbaff;
     }
+
+    .codeblock {
+        background-color: #3c6e6a;
+        border: 1px solid #e0e0e0;
+    }
 }
 
 body {
@@ -43,8 +53,6 @@ body {
 }
 
 .codeblock {
-    background-color: #dae3ff;
-    border: 1px solid black;
     overflow-x: auto
 }
 
