@@ -87,3 +87,7 @@ img {
     margin: auto;
     display: block;
 }
+
+input{
+    width: 50%;
+}
