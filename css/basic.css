@@ -12,8 +12,8 @@
 
 @media (prefers-color-scheme:light) {
     body{
-        background-color: #f5f6f7;
-        color: #000;
+        background-color: #f6f7f2;
+        color: #1e1c1d;
     }
 
     a {
@@ -48,7 +48,7 @@ body {
     font-family: sans-serif;
     text-rendering: optimizeLegibility;
     line-height: 1.5;
-    font-size: 1.125em;
+    font-size: 1.2em;
     margin: auto;
 }
 
