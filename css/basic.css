@@ -71,6 +71,7 @@ footer>img{
 
 footer>a{
     border: none;
+    display: inline-block;
 }
 
 td {
