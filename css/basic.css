@@ -65,6 +65,14 @@ footer {
     text-align: left;
 }
 
+footer>img{
+    display: inline-block;
+}
+
+footer>a{
+    border: none;
+}
+
 td {
     padding: 5px
 }
@@ -92,10 +100,4 @@ input, textarea{
     width: 90%;
 }
 
-footer>img{
-    display: inline-block;
-}
 
-footer>a{
-    border: none;
-}
