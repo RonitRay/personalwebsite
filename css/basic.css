@@ -91,3 +91,11 @@ img {
 input, textarea{
     width: 90%;
 }
+
+footer>img{
+    display: inline-block;
+}
+
+footer>a{
+    border: none;
+}
