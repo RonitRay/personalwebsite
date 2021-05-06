@@ -37,7 +37,17 @@
 <li>If such an open slot is found, we must <strong>issue an alert</strong> somehow. </li>
 </ol>
 
-<p>My demo code will be in Python, but if you have the logic down, it is really easy to adapt to whatever language or framework you are comfortable in. I am a CLI person myself, but you can also extend this into a simple GUI for convenience. Hell, I might do so myself... my GitHub is awfully barren. A small note: the APIs only allow you to find open slots. Any action to actually reserve a vaccination booking for yourself is something you must do manually, as the web services to do so are protected and for authorized (not public) use only.</p>
+<p>My demo code will be in Python, but if you have the logic down, it is really easy to adapt to whatever language or framework you are comfortable in. I am a CLI person myself, but you can also extend this into a simple GUI for convenience. Some great projects in this vein are:</p>
+
+<ol>
+<li><a href="https://www.vaccinateme.in/covid/?type=district">VaccinateMe</a></li>
+<li><a href="https://getjab.in/">GetJab</a></li>
+<li><a href="https://findmyslots.com/">FindMySlots</a></li>
+</ol>
+
+<p>Hell, I might do so myself... my GitHub is awfully barren. </p>
+
+<p>A small note: the APIs only allow you to find open slots. Any action to actually reserve a vaccination booking for yourself is something you must do manually, as the web services to do so are protected and for authorized (not public) use only.</p>
 
 <p>Less talk, more code.</p>
 
