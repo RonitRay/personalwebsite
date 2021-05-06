@@ -9,7 +9,7 @@
 <link>https://ronitray.xyz/posts/covid-vaccine-tracker.html</link>
 <pubDate>Wed, 05 May 2021</pubDate>
 <description>I grew sick of manually searching for vaccine slots, so I built my own tracker.</description>
-<content:encoded><![CDATA[<p>It's that time of the year. Birds are chirping, people are dying, your government has chosen to ignore a massive supply-side shortage and opened up vaccine bookings for all citizens, thus shifting the onus to get vaccinated entirely upon them... perfectly normal and rather wonderful.</p>
+<content:encoded><![CDATA[<p>It's that time of the year. Birds are chirping, people are dying, your government has chosen to ignore a massive supply-side vaccine shortage, allowed manufacturers to set their own prices and opened up vaccine bookings for all citizens, thus shifting the onus to get vaccinated entirely upon you... perfectly normal and rather wonderful.</p>
 
 <p>The number of vaccines available in my city is extremely low at the moment. Hospitals declare stocks on the <a href="https://cowin.gov.in/">government portal</a> as they please, and then it is pretty much a game of fastest finger first to grab a booking. There are no notifications, and it takes a while to go from the login page to a page where you can actually make a booking. If traffic is high, this takes longer since the one-time password takes forever to arrive.</p>
 
@@ -242,7 +242,7 @@ while True:
 
 <h3>A Disclaimer Before We Go</h3>
 
-<p>The idea behind this program is to use publicly available APIs and data provided by the Indian government to expedite the slot booking process and reduce the friction overall. I don't encourage or condone any untoward behavior including abuse of the public APIs, using bots beyond the alert process (eg. for automating bookings and so on) or any other illegal or immoral activity. If any objections are brought forward or if someone brings to my notice it is wrong to use such a program, I will take the post and the git repository down. I encourage everyone undertaking something like this project to deal in good faith only and ensure we, as a population, do everything in our capacity to get vaccinated as soon as possible and push back against the pandemic.</p>
+<p>The idea behind this program is to use publicly available APIs and data provided by the Indian government to expedite the slot booking process and reduce the friction overall. I don't encourage or condone any untoward behavior including abuse of the public APIs, using bots beyond the alert process (eg. for automating bookings and so on) or any other illegal or immoral activity. If any objections are brought forward or if someone brings to my notice that it is wrong to use such a program, I will take the post and the git repository down. I encourage everyone undertaking something like this project to deal in good faith only and ensure we, as a population, do everything in our capacity to get vaccinated as soon as possible and push back against the pandemic.</p>
 ]]></content:encoded>
 </item>
 <item>
