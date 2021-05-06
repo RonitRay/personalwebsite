@@ -17,19 +17,25 @@
 
 <h3>What We Have</h3>
 
-<p>The Co-Win API exposes the following data through REST web services:
-1. <a href="https://apisetu.gov.in/public/api/cowin#/Metadata%20APIs/states"><strong>A list of Indian states,</strong></a> from which we can grab the state ID we want to query.
-2. <a href="https://apisetu.gov.in/public/api/cowin#/Metadata%20APIs/districts"><strong>A list of districts in a particular state,</strong></a> from which we can grab the district ID we want to query. 
-3. <a href="https://apisetu.gov.in/public/api/cowin#/Appointment%20Availability%20APIs/calendarByDistrict"><strong>A list of vaccination sessions in the next 7 days in a particular district,</strong></a> which is what we need and are going to use.</p>
+<p>The Co-Win API exposes the following data through REST web services:</p>
+
+<ol>
+<li><a href="https://apisetu.gov.in/public/api/cowin#/Metadata%20APIs/states"><strong>A list of Indian states,</strong></a> from which we can grab the state ID we want to query.</li>
+<li><a href="https://apisetu.gov.in/public/api/cowin#/Metadata%20APIs/districts"><strong>A list of districts in a particular state,</strong></a> from which we can grab the district ID we want to query. </li>
+<li><a href="https://apisetu.gov.in/public/api/cowin#/Appointment%20Availability%20APIs/calendarByDistrict"><strong>A list of vaccination sessions in the next 7 days in a particular district,</strong></a> which is what we need and are going to use.</li>
+</ol>
 
 <p>It is worth noting that there is a web service to find vaccination sessions in the next week for a particular pincode, but the shortage is so bad that it's likely there won't be a vaccination center in your pincode for quite a while. You're probably better off driving to a center near you, which is what the above will help us identify.</p>
 
 <h3>What We Are Going to Do</h3>
 
-<p>We will:
-1. <strong>Query the API at a regular interval</strong>, say every half an hour, to find all slots in the next week.
-2. We filter the results to find slots that are <strong>available</strong>, and <strong>open to our age group</strong>
-3. If such an open slot is found, we must <strong>issue an alert</strong> somehow. </p>
+<p>We will:</p>
+
+<ol>
+<li><strong>Query the API at a regular interval</strong>, say every half an hour, to find all slots in the next week.</li>
+<li>We filter the results to find slots that are <strong>available</strong>, and <strong>open to our age group</strong></li>
+<li>If such an open slot is found, we must <strong>issue an alert</strong> somehow. </li>
+</ol>
 
 <p>My demo code will be in Python, but if you have the logic down, it is really easy to adapt to whatever language or framework you are comfortable in. I am a CLI person myself, but you can also extend this into a simple GUI for convenience. Hell, I might do so myself... my GitHub is awfully barren. A small note: the APIs only allow you to find open slots. Any action to actually reserve a vaccination booking for yourself is something you must do manually, as the web services to do so are protected and for authorized (not public) use only.</p>
 
@@ -37,9 +43,12 @@
 
 <h3>Step 1: Inputs</h3>
 
-<p>To query for slots, we need two input parameters:
-1. The DISTRICT ID in which we are looking for slots.
-2. The DATE from which we will be looking for slots.</p>
+<p>To query for slots, we need two input parameters:</p>
+
+<ol>
+<li>The DISTRICT ID in which we are looking for slots.</li>
+<li>The DATE from which we will be looking for slots.</li>
+</ol>
 
 <p>We first set up a BASE_DOMAIN for the service URL.</p>
 
