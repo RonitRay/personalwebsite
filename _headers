@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'none'; img-src 'self' https://ronit.goatcounter.com/count; script-src 'self'; style-src 'self'; frame-ancestors 'none'
   Referrer-Policy: no-referrer, strict-origin-when-cross-origin
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
