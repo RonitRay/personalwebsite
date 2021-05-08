@@ -45,7 +45,7 @@
 <li>Session: Only to eliminate duplicate pageviews. The cited example on their site is: <em>Track unique visitors for up to 8 hours; if you disable this then someone pressing e.g. F5 to reload the page will just show as 2 pageviews instead of 1</em></li>
 </ol>
 
-<p>If this is still too invasive for you, you are likely using an adblocker of some sort. I have noticed that most ad-blockers (uBlock Origin, Adguard, StevenBlack hosts list etc.) are tuned to block any requests to or content loaded from GoatCounter).</p>
+<p>If this is still too invasive for you, you are likely using an adblocker of some sort. I have noticed that most ad-blockers (uBlock Origin, Adguard, StevenBlack hosts list etc.) are tuned to block any requests to or content loaded from GoatCounter, so this will not be an issue for you. You can also block this manually using a hosts file, for example.</p>
 
 <p>Also in the interest of full transparency, I am opening up my analytics dashboard to the general public. You get to see all the data that I do, with no exceptions.</p>
 
