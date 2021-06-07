@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="
+How to use content blockers to make StackOverflow load insanely fast.
+">
+    <link rel="stylesheet" href="https://ronitray.xyz/css/basic.css">
+    <title>
+Supercharging StackOverflow for Productivity (and Profit?)
+ | Ronit Ray</title>
+
+</head>
+
+<body class='container'>
+    <header>
+        <p><b><a href='https://ronitray.xyz'>Ronit Ray</a></b></p>
+        <nav>
+            <a href="https://ronitray.xyz/posts/about"> About </a>&bull;
+            <a href="https://ronitray.xyz/blog"> Blog </a>&bull;
+            <a href='https://ronitray.xyz/posts/projects'> Projects </a>&bull;
+            <!--<a href="https://ronitray.xyz/library"> Library </a>&bull;-->
+            <a href="https://ronitray.xyz/posts/contact"> Contact</a>
+        </nav>
+    </header>
+    <hr>
+
+    
+<section id='post-top'>
+    <h1>Supercharging StackOverflow for Productivity (and Profit?)</h1>
+    
+    <h3>2021-06-07 &bull; 3-minute read</h3>
+    
+</section>
+<article>
+    <p>StackOverflow is a blessing. It's a career maker and a career saver for almost every software engineer I know, myself included. That said, it can be better.</p>
+
+<p><img src='https://ronitray.xyz/img/good-better.webp' alt='Pedro Pascal&#39;s character in Wonder Woman 1984, Maxwell Lord, saying StackOverflow is Good... But it can be Better!'/></p>
+
+<p>The vast majority of StackOverflow usage at work, at least for me, is looking for solutions that exist already. I don't need the account features (it has been months since I've logged in). I land on the question's page from my search engine, and bounce when I am done. I am only concerned with the content of the question and the proposed solutions, and perhaps any similar questions that might be relevant. Along with these, however, this is everything a StackOverflow page presents:</p>
+
+<ol>
+<li>A header with a search box I don't use, and links to 'About', 'Products', 'For Teams' and account-related actions.</li>
+<li>A form to answer the question.</li>
+<li>A link to the developer survey.</li>
+<li>A footer with a whole lot of other stuff.</li>
+<li>Cookie pop-ups.</li>
+<li>Another popup at the bottom urging you to join StackOverflow.</li>
+<li>An ad for StackOverflow for Teams in the left sidebar.</li>
+<li>Options to search for Jobs and Companies in the left sidebar.</li>
+<li>Links to the general Questions, Users, and Tags pages in the left sidebar.</li>
+<li>Links to posts on the StackOverflow blog.</li>
+<li>"Hot network questions" from across the StackExchange forums.</li>
+</ol>
+
+<p>The average StackOverflow page looks like this:</p>
+
+<p><img src='https://ronitray.xyz/img/full-stackoverflow.webp' alt='A full StackOverflow page'/></p>
+
+<p>Here's how you can strip away the extraneous elements and keep only the content.</p>
+
+<ol>
+<li><p>Install <a href="https://ublockorigin.com/">uBlock Origin</a>. Most people have this installed already. If you don't, what are you waiting for? It makes the web much less hostile.</p>
+
+<p>Aside from its excellent ad and tracker blocking, uBlock Origin has a powerful feature called cosmetic filtering. This allows you to change the appearance of a website at will. You could render a website in a dark theme, or with any CSS of your choosing. Or better, in this case, you will purge (the official term is 'zap') any DOM elements you don't want to see on the page. Here's how.</p></li>
+<li><p>After installing uBlock, click on the settings icon <img src='https://ronitray.xyz/img/ublock_settings.png' alt='The icon for settings in uBlock Origin'></p></li>
+<li>In the tab that opens, click on My Filters on the top bar.</li>
+<li><p>Add the following lines to the text box:</p>
+
+<pre class='codeblock'>! 2021-06-07 https://stackoverflow.com
+stackoverflow.com##.top-bar__network.js-top-bar.top-bar
+stackoverflow.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+stackoverflow.com##.ps-relative.js-pinned-left-sidebar.left-sidebar
+stackoverflow.com##.sm\:as-end.sm\:order-first.sm\:mb12.sm\:ml0.print\:d-none.grid--cell.aside-cta.ml12
+stackoverflow.com##.m0.p0.d-block
+stackoverflow.com##.tex2jax_ignore.module
+stackoverflow.com##.js-dismissable-hero.z-nav.b0.r0.l0.ps-fixed.bc-black-100.bt.bs-sm.bg-black-025
+stackoverflow.com##.js-footer.site-footer
+stackoverflow.com##.post-form.js-add-answer-component
+stackoverflow.com##.bottom-notice
+stackoverflow.com##.py2.fs-body2.ff-sans.fc-white.bg-black-700.js-announcement-banner
+</pre></li>
+<li><p>Click on 'Apply Changes', close the tab and try opening any StackOverflow page.</p></li>
+</ol>
+
+<p>This is the result:
+<img src='https://ronitray.xyz/img/clean-stackoverflow.webp' alt='The new, improved, cleaner StackOverflow page'/></p>
+
+<p>It is much cleaner, shows only the relevant information and offers no distractions whatsoever. Troubleshooting your code has never been more pleasurable.</p>
+
+</article>
+<section id='post-other'>
+    <br>
+    <a href="https://ronitray.xyz">back to Home</a>
+    <br>
+    <br>
+
+    <img src="https://ronit.goatcounter.com/count?p=/stackoverflow-faster">
+    
+    <!--
+    
+    <hr>
+    Have a look at some posts I enjoyed reading this week:<br>
+    <ul>
+        
+        <li><a href='https://lmcnulty.gitlab.io/blog/surnames/'>A Better Solution for Married Surnames</a> by Luna McNulty</li>
+        
+        <li><a href='https://mattstoller.substack.com/p/how-biden-can-clean-up-obamas-big'>How Economists Corrupted the Internet</a> by Matt Stoller</li>
+        
+        <li><a href='https://whoo.ps/2021/03/21/you-merely-adopted-dark-mode'>You merely adopted dark mode- The best product too few people have ever used</a> by Jonathan Libov</li>
+        
+    </ul>
+     --
+  -->
+</section>
+
+
+    <br>
+    <hr>
+    <footer>
+        <a href="https://ronitray.xyz/feed.xml">Subscribe via RSS feed</a>
+        <br>
+        Copyright &copy; 2020-2021, Ronit Ray.
+        <br>
+        <a href="https://ronitray.xyz/posts/license">Licenses: CC BY-SA (content), MIT (code).</a>
+        <!-- <br><br>
+        <a href="https://www.mozilla.org/en-US/firefox/new/"><img alt="Looks best on Firefox Browser" src="https://ronitray.xyz/img/firefox.svg"/></a>
+        &nbsp;
+        <a href="https://www.vim.org/"><img alt="Written on Vim" src="https://ronitray.xyz/img/vim.svg"></a>
+        <br>
+        <a href="https://www.linux.com/what-is-linux/"><img alt="Powered by Linux" src="https://ronitray.xyz/img/linux.svg"></a>
+        &nbsp;
+        <a href="https://www.netlify.com/"><img alt="Hosted on Netlify" src="https://ronitray.xyz/img/netlify.svg"></a>
+	-->
+    </footer>
+    <br>
+</body>
+
+</html>
