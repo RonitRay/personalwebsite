@@ -92,11 +92,14 @@ $ git clone https://github.com/RonitRay/ecstatic.git
         <p>Before you start, there are some python dependencies you must install. I recommend using a <a href='https://docs.python.org/3/tutorial/venv.html'>virtual
             environment</a> or <a href='https://pipenv.pypa.io/en/latest/'><code>pipenv</code></a> within the ecstatic folder for containerization and to not affect your system in
             any way.</p>
+        <p><b>DEVELOPER NOTE: At the moment, Jinja v3.0 and up are not supported. They have rolled out some changes to PackageLoader that break functionality for ecstatic, and unless I understand and patch it, ecstatic will not run on machines with a new version of jinja installed. Please install v2.11.3 until specified.</b> </p>
+
         <pre class='codeblock'>
             <code>
 $ pip3 install pipenv
-$ pipenv shell        
-$ pip3 install datetime jinja2 markdown2
+$ pipenv shell
+$ pip3 install jinja2==2.11.3
+$ pip3 install datetime markdown2
         </code>
     </pre>
         <p>You should now be all set.</p>
