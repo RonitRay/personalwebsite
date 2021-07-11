@@ -115,13 +115,15 @@
 
 <p><img src="../img/docusaurus.webp" alt="Algolia's DocSearch, built with Docusaurus"></p>
 
-<p><a href="https://docusaurus.io/">Check out Docusaurus here!</a>
-<a href="https://themes.gohugo.io/tags/docs/">Check out Hugo documentation templates here!</a>
-<a href="https://jekyllthemes.io/jekyll-documentation-themes">Check out Jekyll documentation templates here!</a></p>
+<p><a href="https://docusaurus.io/">Check out Docusaurus here!</a></p>
+
+<p><a href="https://themes.gohugo.io/tags/docs/">Check out Hugo documentation templates here!</a></p>
+
+<p><a href="https://jekyllthemes.io/jekyll-documentation-themes">Check out Jekyll documentation templates here!</a></p>
 
 <h4>Org-Mode (5/6)</h4>
 
-<p>I'm not an emacs user. That alone is disqualifying for org mode, I think. I have been exposed to some great demonstrations on org-mode [ [1](https://www.youtube.com/watch?v=oJTwQvgfgMM) ] [ [2](https://www.youtube.com/watch?v=Ea_-TaEGa7Y) ] [ <a href="https://www.youtube.com/watch?v=SzA2YODtgK4">3</a> ], so I have no illusions about the fact that it is an incredible tool. I actually spent a couple of months in emacs too, and enjoyed it. Part of this period was spent moving over my small notes database (poor choice of words, it was basically a bunch of text files) to org mode. While I enjoyed it, there was too much of it that I felt I didn't understand and had to memorize, and a whole lot of untapped potential as is the case with emacs in general. I've never been exposed to Lisp, and don't have the time or, at the moment, the inclination to learn elisp to get things to work the way I want. For this reason I almost gave negative points to org mode in terms of "friction", but settled on a 0. In another life, or perhaps in a few years... who knows.</p>
+<p>I'm not an emacs user. That alone is disqualifying for org mode, I think. I have been exposed to some great demonstrations on org-mode <a href="https://www.youtube.com/watch?v=oJTwQvgfgMM">1</a> <a href="https://www.youtube.com/watch?v=Ea_-TaEGa7Y">2</a> <a href="https://www.youtube.com/watch?v=SzA2YODtgK4">3</a>, so I have no illusions about the fact that it is an incredible tool. I actually spent a couple of months in emacs too, and enjoyed it. Part of this period was spent moving over my small notes database (poor choice of words, it was basically a bunch of text files) to org mode. While I enjoyed it, there was too much of it that I felt I didn't understand and had to memorize, and a whole lot of untapped potential as is the case with emacs in general. I've never been exposed to Lisp, and don't have the time or, at the moment, the inclination to learn elisp to get things to work the way I want. For this reason I almost gave negative points to org mode in terms of "friction", but settled on a 0. In another life, or perhaps in a few years... who knows.</p>
 
 <p><img src="../img/orgmode.webp" alt="A screenshot of org-wiki for org-mode in Emacs"></p>
 
@@ -152,17 +154,23 @@
 
 <p>Zim is a remarkable little graphical editor that allows for hierarchical text/hybrid document storage. It's available on every major desktop platform, looks fair enough and is easy to get into. Even beyond the surface simplicity that is so attractive, there's a good deal of features that "power users" might want to make use of from time to time. </p>
 
-<p>What I love:
-1. It's just simple.
-2. The WYSIWYG editor is pretty great, but it also supports Markdown and standard keybindings for bold, underline etc.
-3. The folder and file structure is sane.
-4. It isn't usable directly on phone, but there's nothing stopping me from syncing the folder using Syncthing and then editing the files using an editor of my choice.
-5. HTML export is there and it works great! It's pretty quick and simple, and while the default formatting is not responsive, it supports external templates. There are a <a href="https://github.com/jaap-karssenberg/zim-wiki/wiki/Templates">handful of templates available already</a>. I've decided to use the <a href="https://github.com/jrm4/Eight-Five-Zero">Eight-Five-Zero</a> theme, but have removed useless (according to me) jQuery stuff, added a CSS rule to make code blocks play well with smaller screens, and fixed an issue with line height that I explained in some detail in <a href="https://ronitray.xyz/posts/line-height-units-css">this post</a>.
-    1. Yes, the templating language is really simple, and you can just wrap it with good old HTML! <a href="https://github.com/RonitRay/Zim-Wiki-Template-850">Here's a link to my template</a>
-    2. Zim goes so far as to generate an index for all my content, which is just wonderful.</p>
+<p>What I love:</p>
 
-<p>What I don't love:
-What's not to love? Zim is superb and everything I asked, and potentially could ever ask for. The only thing I can think might be a shortcoming compared to other items listed here is the fact that the web output cannot be searched, but the caveat is that it is served as static HTML that is simpler and much faster. I think I can take that deal. Besides, the actual tool has full-text search in it, it's just the web output which doesn't.</p>
+<ol>
+<li>It's just simple.</li>
+<li>The WYSIWYG editor is pretty great, but it also supports Markdown and standard keybindings for bold, underline etc.</li>
+<li>The folder and file structure is sane.</li>
+<li>It isn't usable directly on phone, but there's nothing stopping me from syncing the folder using Syncthing and then editing the files using an editor of my choice.</li>
+<li>HTML export is there and it works great! It's pretty quick and simple, and while the default formatting is not responsive, it supports external templates. There are a <a href="https://github.com/jaap-karssenberg/zim-wiki/wiki/Templates">handful of templates available already</a>. I've decided to use the <a href="https://github.com/jrm4/Eight-Five-Zero">Eight-Five-Zero</a> theme, but have removed useless (according to me) jQuery stuff, added a CSS rule to make code blocks play well with smaller screens, and fixed an issue with line height that I explained in some detail in <a href="https://ronitray.xyz/posts/line-height-units-css">this post</a>.
+<ol>
+<li>Yes, the templating language is really simple, and you can just wrap it with good old HTML! <a href="https://github.com/RonitRay/Zim-Wiki-Template-850">Here's a link to my template</a></li>
+<li>Zim goes so far as to generate an index for all my content, which is just wonderful.</li>
+</ol></li>
+</ol>
+
+<p>What I don't love:</p>
+
+<p>What's not to love? Zim is superb and everything I asked, and potentially could ever ask for. The only thing I can think might be a shortcoming compared to other items listed here is the fact that the web output cannot be searched, but the caveat is that it is served as static HTML that is simpler and much faster. I think I can take that deal. Besides, the actual tool has full-text search in it, it's just the web output which doesn't.</p>
 
 <h3>The Result</h3>
 
