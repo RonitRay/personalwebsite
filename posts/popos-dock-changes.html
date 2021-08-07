@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="
+PopOS is a superb distro, but the new dock could do with some changes. Here's how.
+">
+    <link rel="stylesheet" href="https://ronitray.xyz/css/basic.css">
+    <title>
+Fix the Dock on PopOS for Productivity and Profit
+ | Ronit Ray</title>
+
+</head>
+
+<body class='container'>
+    <header>
+        <p><b><a href='https://ronitray.xyz'>Ronit Ray</a></b></p>
+        <nav>
+            <a href="https://ronitray.xyz/posts/about"> About </a>&bull;
+            <a href="https://ronitray.xyz/blog"> Blog </a>&bull;
+            <a href='https://ronitray.xyz/posts/projects'> Projects </a>&bull;
+            <!--<a href="https://ronitray.xyz/library"> Library </a>&bull;-->
+            <a href="https://ronitray.xyz/posts/contact"> Contact</a>
+        </nav>
+    </header>
+    <hr>
+
+    
+<section id='post-top'>
+    <h1>Fix the Dock on PopOS for Productivity and Profit</h1>
+    
+    <h3><i>2021-08-07 &bull; 2-minute read</i></h3>
+    
+</section>
+<article>
+    <p>After years on KDE and then a variety of minimal window managers, I installed <a href="https://pop.system76.com/">System76's PopOS</a> on my personal laptop a few months ago. GNOME has, historically, really not been my thing, but I've come to really appreciate the way Pop does things.</p>
+
+<p>In many ways Pop has provided a very sane, quick set of defaults that gets out of my way and doesn't need me to tweak much to get started and go about my work. The new <a href="https://blog.system76.com/post/655369428109869056/popos-2104-a-release-of-cosmic-proportions">COSMIC desktop</a>, which is what they call their collection of tweaks on top of GNOME, brings quite a few usability improvements. One of these is the <a href="https://github.com/pop-os/cosmic-dock/">Cosmic Dock</a>, which seems to be some kind of fork of the GNOME extension <a href="https://github.com/micheleg/dash-to-dock">Dash to Dock</a>.</p>
+
+<p>This is pretty cool for laptop users who don't always want to be using keyboard shortcuts to open up applications or switch between them. Using my thumb to navigate while typing with my fingers has been pretty good for me. That said, the default behaviour of the dock is a bit unnatural to me: you can't click on an icon to minimize the window, and if you have multiple instances of the program open, you click on the icon to cycle through the open instances. I would like this to bring up a preview and let me pick which instance to go to directly, which is what panels on KDE and the like usually do.</p>
+
+<p>Turns out this is fully possible, with a little tinkering under the hood. Here's how:</p>
+
+<ol>
+<li>Install dconf-editor from apt or your package manager</li>
+<li>In dconf-editor
+a. Navigate to 'org.gnome.shell.extensions.dash-to-dock'
+b. Set the "click-action" to "minimize-or-previews". This does:
+    1. Single app in background, focus it.
+    2. Multiple apps in background, show the previews so you can pick the app you want.
+    3. App already focused, minimize it.</li>
+</ol>
+
+<p>This works about as well as I want it to now. Thanks to Nathanael Anderson for providing <a href="https://github.com/pop-os/cosmic-dock/issues/21">the solution</a> on GitHub.</p>
+
+</article>
+<section id='post-other'>
+    <br>
+    <a href="https://ronitray.xyz">back to Home</a>
+    <br>
+    <br>
+
+    <img src="https://ronit.goatcounter.com/count?p=/popos-dock-changes">
+    
+    <!--
+    
+    <hr>
+    Have a look at some posts I enjoyed reading this week:<br>
+    <ul>
+        
+        <li><a href='https://lmcnulty.gitlab.io/blog/surnames/'>A Better Solution for Married Surnames</a> by Luna McNulty</li>
+        
+        <li><a href='https://mattstoller.substack.com/p/how-biden-can-clean-up-obamas-big'>How Economists Corrupted the Internet</a> by Matt Stoller</li>
+        
+        <li><a href='https://whoo.ps/2021/03/21/you-merely-adopted-dark-mode'>You merely adopted dark mode- The best product too few people have ever used</a> by Jonathan Libov</li>
+        
+    </ul>
+     --
+  -->
+</section>
+
+
+    <br>
+    <hr>
+    <footer>
+        <a href="https://ronitray.xyz/feed.xml">Subscribe via RSS feed</a>
+        <br>
+        Copyright &copy; 2020-2021, Ronit Ray.
+        <br>
+        <a href="https://ronitray.xyz/posts/license">Licenses: CC BY-SA (content), MIT (code).</a>
+        <!-- <br><br>
+        <a href="https://www.mozilla.org/en-US/firefox/new/"><img alt="Looks best on Firefox Browser" src="https://ronitray.xyz/img/firefox.svg"/></a>
+        &nbsp;
+        <a href="https://www.vim.org/"><img alt="Written on Vim" src="https://ronitray.xyz/img/vim.svg"></a>
+        <br>
+        <a href="https://www.linux.com/what-is-linux/"><img alt="Powered by Linux" src="https://ronitray.xyz/img/linux.svg"></a>
+        &nbsp;
+        <a href="https://www.netlify.com/"><img alt="Hosted on Netlify" src="https://ronitray.xyz/img/netlify.svg"></a>
+	-->
+    </footer>
+    <br>
+</body>
+
+</html>
