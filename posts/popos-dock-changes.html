@@ -48,11 +48,15 @@ Fix the Dock on PopOS for Productivity and Profit
 <ol>
 <li>Install dconf-editor from apt or your package manager</li>
 <li>In dconf-editor
-a. Navigate to 'org.gnome.shell.extensions.dash-to-dock'
-b. Set the "click-action" to "minimize-or-previews". This does:
-    1. Single app in background, focus it.
-    2. Multiple apps in background, show the previews so you can pick the app you want.
-    3. App already focused, minimize it.</li>
+<ol>
+<li>Navigate to 'org.gnome.shell.extensions.dash-to-dock'</li>
+<li>Set the "click-action" to "minimize-or-previews". This does:
+<ol>
+<li>Single app in background, focus it.</li>
+<li>Multiple apps in background, show the previews so you can pick the app you want.</li>
+<li>App already focused, minimize it.</li>
+</ol></li>
+</ol></li>
 </ol>
 
 <p>This works about as well as I want it to now. Thanks to Nathanael Anderson for providing <a href="https://github.com/pop-os/cosmic-dock/issues/21">the solution</a> on GitHub.</p>
