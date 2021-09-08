@@ -29,13 +29,13 @@
 
 @media (prefers-color-scheme:dark) {
     body{
-        background-color: #3d3d3d;
+        background-color: #242424;
         color: #e3e3e3;
     }
 
     a {
-        color: #67ff14;
-        border-bottom: 1px solid #67ff14;
+        color: #d1ffb8;
+        border-bottom: 1px solid #d1ffb8;
     }
 
     .codeblock {
