@@ -12,35 +12,35 @@
 
 @media (prefers-color-scheme:light) {
     body{
-        background-color: #fdf2e9;
+        background-color: #e7f0e5;
         color: #1e1c1d;
     }
 
     a {
-        color: #A30000;
-        border-bottom: 1px solid #A30000;
+        color: #1e5417;
+        border-bottom: 1px solid #1e5417;
     }
 
     .codeblock {
         background-color: #f5f5f5;
-        border: 1px solid black;
+        border: 1px solid #1e1c1d;
     }
 }
 
 @media (prefers-color-scheme:dark) {
     body{
-        background-color: #212121;
-        color: #e0e0e0;
+        background-color: #3d3d3d;
+        color: #e3e3e3;
     }
 
     a {
-        color: #4bbaff;
-        border-bottom: 1px solid #4bbaff;
+        color: #67ff14;
+        border-bottom: 1px solid #67ff14;
     }
 
     .codeblock {
-        background-color: #365454;
-        border: 1px solid #EDEDED;
+        background-color: #254722;
+        border: 1px solid #e3e3e3;
     }
 }
 
