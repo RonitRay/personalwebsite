@@ -24,6 +24,7 @@
     .codeblock {
         /*background-color: #f5f5f5;*/
         border: 1px solid #1e1c1d;
+        color: #1e5417;
     }
 }
 
@@ -40,6 +41,7 @@
 
     .codeblock {
         /*background-color: #254722;*/
+        color: #d1ffb8;
         border: 1px solid #e3e3e3;
     }
 }
@@ -53,7 +55,8 @@ body {
 }
 
 .codeblock {
-    overflow-x: auto
+    overflow-x: auto;
+    padding: 10px;
 }
 
 a {
