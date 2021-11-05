@@ -47,7 +47,8 @@
 }
 
 body {
-    font-family: Ubuntu, Roboto, Liberation Sans, Calibri, Arial, Helvetica, sans-serif;
+    /* font-family: Ubuntu, Roboto, Liberation Sans, Calibri, Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto Slab', 'Liberation Serif', 'Cambria' , 'Georgia', 'Times New Roman', serif;
     text-rendering: optimizeLegibility;
     line-height: 1.6;
     font-size: 18px;
