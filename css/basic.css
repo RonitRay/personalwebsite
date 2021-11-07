@@ -6,7 +6,7 @@
 
 @media all and (orientation:landscape) {
     body{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -47,8 +47,8 @@
 }
 
 body {
-    font-family: 'Roboto Slab', 'Ubuntu', 'Roboto', 'Liberation Sans', 'Calibri', 'Arial', 'Helvetica', sans-serif;
-    /* font-family: 'Roboto Slab', 'Liberation Serif', 'Cambria' , 'Georgia', 'Times New Roman', serif; */
+    /* font-family: 'Roboto Slab', 'Ubuntu', 'Roboto', 'Liberation Sans', 'Calibri', 'Arial', 'Helvetica', sans-serif; */
+    font-family: 'Roboto Slab', 'Noto Serif', 'Georgia' , 'Cambria', 'Times New Roman', serif;
     text-rendering: optimizeLegibility;
     line-height: 1.6;
     font-size: 18px;
